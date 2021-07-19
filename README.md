@@ -1,4 +1,4 @@
-The documentation is available online here:
-https://around.createx.studio/docs/dev-setup.html
-OR
-Offline: inside Around/dist/docs folder
+2021년 예비창업패키지 '담끼' 홈페이지 제작
+
+개발: 장창훈
+디자인: 김영인, 최지혜

@@ -195,7 +195,7 @@
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
       <header class="header navbar navbar-expand-lg navbar-light navbar-sticky navbar-shadow" data-fixed-element>
         <div class="container px-0 px-xl-3">
-          <button class="navbar-toggler ms-n2 me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="navbar-floating-logo d-none d-lg-block mt-1" src="img/damggi/logo_small.svg" alt="damkki" width="51"><h6 class="d-lg-none text-dark mb-0">담끼 소개</h5></a>
+          <button class="navbar-toggler ms-n2 me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="navbar-floating-logo d-none d-lg-block mt-1" src="img/damggi/logo_small.svg" alt="damkki" width="51"><h6 class="d-lg-none text-dark mb-0 fw-medium">서비스</h5></a>
             <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
               <a class="btn btn-primary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">문의하기 </a>
               <a class="btn btn-primary d-lg-none text-decoration-none" style="width: 84px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">문의하기 </a>
@@ -208,13 +208,15 @@
             <div class="offcanvas-body">
               <!-- Menu-->
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="introduce.html">담끼 소개</a></li>
-                <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">서비스</a>
-                  <div class="dropdown-menu"><a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a>
-                  <div class="dropdown-column"><a class="dropdown-item" href="service.html">시스템 소개</a><a class="dropdown-item" href="service.html#simpleGuide">이용 안내</a></div>
+                <li class="nav-item"><a class="nav-link" href="introduce.html">담끼 소개</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="service.html" data-bs-toggle="dropdown">서비스</a>
+                  <ul class="dropdown-menu">
+                    <!-- <a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a> -->
+                    <!--<div class="dropdown-column">--><li><a class="dropdown-item" href="service.html">시스템 소개</a></li><li><a class="dropdown-item" href="service.html#simpleGuide">이용 안내</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">위생&안전</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">문의 및 FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">문의 및 FAQ</a></li>
 
 
                 <!-- <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Templates</a>
@@ -340,15 +342,17 @@
         </div>
       </section> -->
 
-      <section class="bg-secondary py-6 px-md-7 mt-md-0 pt-md-7">
-        <div class="row align-items-end align-items-lg-start mx-md-7 justify-content-between">
-          <!-- <div class="col-md-2"></div> -->
-          <div class="col-md-6 pb-5 pb-md-6 pt-lg-6 text-center text-md-start">
-            <h3 class="pb-1">모두를 생각한 서비스, 담끼</h2>
-            <p class="mx-auto mb-5 mx-md-0" style="max-width: 496px;">고객은 무료로 서비스를 이용하고,<br/>음식점은 일회용품 가격에 다회용기를 사용하여<br/>우리 모두가 환경을 지킵니다.</p>
-            <div class="mt-n1"><a class="fancy-link" href="#">음식점 가맹 문의</a><i class="ai-chevron-right" style="color: #FF3932; font-size: 22px;"></i></div>
+      <section class="bg-secondary py-6 mt-md-0 pt-md-7">
+        <div class="container position-relative zindex-5">
+          <div class="row align-items-end align-items-lg-start justify-content-between">
+            <!-- <div class="col-md-2"></div> -->
+            <div class="col-md-6 pb-5 pb-md-6 pt-lg-6 text-center text-md-start">
+              <h3 class="pb-1">모두를 생각한 서비스, 담끼</h2>
+              <p class="mx-auto mb-5 mx-md-0" style="max-width: 496px;">맛있는 음식을 깨끗하게 먹고 싶은 소비자<br/>항상 고객을 먼저 생각하는 음식점<br/>늘어나는 쓰레기에 몸살을 앓고 있는 지구<br/><br/>담끼는 모두를 생각했습니다.</p>
+              <div class="mt-n1"><a class="fancy-link" href="#">음식점 가맹 문의</a><i class="ai-chevron-right" style="color: #FF3932; font-size: 22px;"></i></div>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-xl-1 jus"><img class="d-block mx-auto" src="img/damggi/environment.jpg" alt="environment"></div>
           </div>
-          <div class="col-md-6 col-xl-5 offset-xl-1 jus"><img class="d-block mx-auto" src="img/damggi/environment.jpg" alt="environment"></div>
         </div>
       </section>
 

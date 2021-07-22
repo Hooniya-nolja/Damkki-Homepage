@@ -11512,6 +11512,12 @@ fieldset:disabled .btn {
   .text-md-nowrap {
     white-space: nowrap !important;
   }
+  .bg-md-secondary {
+    background-color: #f7f7fc !important;
+  }
+  .fs-md-xl {
+    font-size: 1.25rem !important;
+  }
 }
 
 @media (min-width: 992px) {

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Around | Multipurpose Bootstrap Template</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <!-- <link rel="stylesheet" media="screen" href="css/theme.min.css"> -->
+    <link rel="stylesheet" media="screen" href="css/theme.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Sign In Modal-->
+      <div class="modal fade" id="modal-signin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content border-0">
+            <div class="view show" id="modal-signin-view">
+              <div class="modal-header border-0 bg-dark px-4">
+                <h4 class="modal-title text-light">Sign in</h4>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="btn-close "></button>
+              </div>
+              <div class="modal-body px-4">
+                <p class="fs-ms text-muted">Sign in to your account using email and password provided during registration.</p>
+                <form class="needs-validation" novalidate>
+                  <div class="mb-3">
+                    <div class="input-group"><i class="ai-mail position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                      <input class="form-control rounded" type="email" placeholder="Email" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="input-group"><i class="ai-lock position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                      <div class="password-toggle w-100">
+                        <input class="form-control" type="password" placeholder="Password" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-3 mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="keep-signed">
+                      <label class="form-check-label fs-sm" for="keep-signed">Keep me signed in</label>
+                    </div><a class="nav-link-style fs-ms" href="password-recovery.html">Forgot password?</a>
+                  </div>
+                  <button class="btn btn-primary d-block w-100" type="submit">Sign in</button>
+                  <p class="fs-sm pt-3 mb-0">Don't have an account? <a href='#' class='fw-medium' data-view='#modal-signup-view'>Sign up</a></p>
+                </form>
+              </div>
+            </div>
+            <div class="view" id="modal-signup-view">
+              <div class="modal-header border-0 bg-dark px-4">
+                <h4 class="modal-title text-light">Sign up</h4>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="btn-close"></button>
+              </div>
+              <div class="modal-body px-4">
+                <p class="fs-ms text-muted">Registration takes less than a minute but gives you full control over your orders.</p>
+                <form class="needs-validation" novalidate>
+                  <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Full name" required>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Email" required>
+                  </div>
+                  <div class="mb-3 password-toggle">
+                    <input class="form-control" type="password" placeholder="Password" required>
+                    <label class="password-toggle-btn" aria-label="Show/hide password">
+                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                    </label>
+                  </div>
+                  <div class="mb-3 password-toggle">
+                    <input class="form-control" type="password" placeholder="Confirm password" required>
+                    <label class="password-toggle-btn" aria-label="Show/hide password">
+                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                    </label>
+                  </div>
+                  <button class="btn btn-primary d-block w-100" type="submit">Sign up</button>
+                  <p class="fs-sm pt-3 mb-0">Already have an account? <a href='#' class='fw-medium' data-view='#modal-signin-view'>Sign in</a></p>
+                </form>
+              </div>
+            </div>
+            <div class="modal-body text-center px-4 pt-2 pb-4">
+              <hr class="my-0">
+              <p class="fs-sm fw-medium text-heading pt-4">Or sign in with</p><a class="btn-social bs-facebook bs-lg mx-1 mb-2" href="#"><i class="ai-facebook"></i></a><a class="btn-social bs-twitter bs-lg mx-1 mb-2" href="#"><i class="ai-twitter"></i></a><a class="btn-social bs-instagram bs-lg mx-1 mb-2" href="#"><i class="ai-instagram"></i></a><a class="btn-social bs-google bs-lg mx-1 mb-2" href="#"><i class="ai-google"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar Floating light for Index page only-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+      <header class="header navbar navbar-expand-lg navbar-light navbar-sticky navbar-shadow" data-fixed-element>
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ms-n2 me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="navbar-floating-logo d-none d-lg-block mt-1" src="img/damggi/logo_small.svg" alt="damkki" width="51"><h6 class="d-lg-none text-dark mb-0 fw-medium">서비스</h5></a>
+            <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+              <a class="btn btn-primary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">문의하기 </a>
+              <a class="btn btn-primary d-lg-none text-decoration-none" style="width: 84px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">문의하기 </a>
+            </div>          <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+            <div class="offcanvas-header navbar-shadow">
+              <!-- <h5 class="mt-1 mb-0">Menu</h5> -->
+              <img src="img/damggi/logo_text.svg" alt="Around" width="65">
+              <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Menu-->
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="introduce.html">담끼 소개</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="service.html" data-bs-toggle="dropdown">서비스</a>
+                  <ul class="dropdown-menu">
+                    <!-- <a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a> -->
+                    <!--<div class="dropdown-column">--><li><a class="dropdown-item" href="service.html">시스템 소개</a></li><li><a class="dropdown-item" href="service.html#simpleGuide">이용 안내</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">위생&안전</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">문의 및 FAQ</a></li>
+
+
+                <!-- <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Templates</a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-column mb-2 mb-lg-0">
+                      <h5 class="dropdown-header">Blog</h5><a class="dropdown-item" href="blog-grid-rs.html">Grid Right Sidebar</a><a class="dropdown-item" href="blog-grid-ls.html">Grid Left Sidebar</a><a class="dropdown-item" href="blog-grid-ns.html">Grid No Sidebar</a><a class="dropdown-item" href="blog-list-rs.html">List Right Sidebar</a><a class="dropdown-item" href="blog-list-ls.html">List Left Sidebar</a><a class="dropdown-item" href="blog-list-ns.html">List No Sidebar</a><a class="dropdown-item" href="blog-single-rs.html">Single Post Right Sidebar</a><a class="dropdown-item" href="blog-single-ls.html">Single Post Left Sidebar</a><a class="dropdown-item" href="blog-single-ns.html">Single Post No Sidebar</a>
+                    </div>
+                    <div class="dropdown-column mb-2 mb-lg-0">
+                      <h5 class="dropdown-header">Portfolio</h5><a class="dropdown-item" href="portfolio-style-1.html">Grid Style 1</a><a class="dropdown-item" href="portfolio-style-2.html">Grid Style 2</a><a class="dropdown-item" href="portfolio-style-3.html">Grid Style 3</a><a class="dropdown-item" href="portfolio-single-side-gallery-grid.html">Project Side Gallery (Grid)</a><a class="dropdown-item" href="portfolio-single-side-gallery-list.html">Project Side Gallery (List)</a><a class="dropdown-item" href="portfolio-single-carousel.html">Project Carousel</a><a class="dropdown-item" href="portfolio-single-wide-gallery.html">Project Wide Gallery</a>
+                    </div>
+                    <div class="dropdown-column mb-2 mb-lg-0">
+                      <h5 class="dropdown-header">Shop</h5><a class="dropdown-item" href="shop-ls.html">Grid Left Sidebar</a><a class="dropdown-item" href="shop-rs.html">Grid Right Sidebar</a><a class="dropdown-item" href="shop-ns.html">Grid No Sidebar</a><a class="dropdown-item" href="shop-single.html">Single Product</a><a class="dropdown-item" href="checkout.html">Cart &amp; Checkout</a><a class="dropdown-item" href="order-tracking.html">Order Tracking</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Dashboard</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="dashboard-orders.html">Orders</a></li>
+                        <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
+                        <li><a class="dropdown-item" href="dashboard-messages.html">Messages</a></li>
+                        <li><a class="dropdown-item" href="dashboard-followers.html">Followers</a></li>
+                        <li><a class="dropdown-item" href="dashboard-reviews.html">Reviews</a></li>
+                        <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Account Settings</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="account-profile.html">Profile Info</a></li>
+                        <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                        <li><a class="dropdown-item" href="account-notifications.html">Notifications</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="signin-illustration.html">Sign In - Illustration</a></li>
+                    <li><a class="dropdown-item" href="signin-image.html">Sign In - Image</a></li>
+                    <li><a class="dropdown-item" href="signin-signup.html">Sign In - Sign Up</a></li>
+                    <li><a class="dropdown-item" href="password-recovery.html">Password Recovery</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about.html">About</a></li>
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Contacts</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contacts-v1.html">Contacts v.1</a></li>
+                        <li><a class="dropdown-item" href="contacts-v2.html">Contacts v.2</a></li>
+                        <li><a class="dropdown-item" href="contacts-v3.html">Contacts v.3</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Help Center</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="help-topics.html">Help Topics</a></li>
+                        <li><a class="dropdown-item" href="help-single-topic.html">Single Topic</a></li>
+                        <li><a class="dropdown-item" href="help-submit-request.html">Submit a Request</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">404 Not Found</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="404-simple.html">Simple Text</a></li>
+                        <li><a class="dropdown-item" href="404-illustration.html">Illustration</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Coming Soon</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="coming-soon-image.html">Image</a></li>
+                        <li><a class="dropdown-item" href="coming-soon-illustration.html">Illustration</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Docs / UI Kit</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="docs/dev-setup.html">
+                        <div class="d-flex align-items-center">
+                          <div class="fs-xl text-muted"><i class="ai-file-text"></i></div>
+                          <div class="ps-3"><span class="d-block text-heading">Documentation</span><small class="d-block text-muted">Kick-start customization</small></div>
+                        </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="components/typography.html">
+                        <div class="d-flex align-items-center">
+                          <div class="fs-xl text-muted"><i class="ai-layers"></i></div>
+                          <div class="ps-3"><span class="d-block text-heading">UI Kit<span class="badge bg-danger ms-2">50+</span></span><small class="d-block text-muted">Flexible components</small></div>
+                        </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="docs/changelog.html">
+                        <div class="d-flex align-items-center">
+                          <div class="fs-xl text-muted"><i class="ai-edit"></i></div>
+                          <div class="ps-3"><span class="d-block text-heading">Changelog<span class="badge bg-success ms-2">v2.2.0</span></span><small class="d-block text-muted">Regular updates</small></div>
+                        </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="mailto:support@createx.studio">
+                        <div class="d-flex align-items-center">
+                          <div class="fs-xl text-muted"><i class="ai-life-buoy"></i></div>
+                          <div class="ps-3"><span class="d-block text-heading">Support</span><small class="d-block text-muted">support@createx.studio</small></div>
+                        </div></a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Intro-->
+      <!-- Background shape-->
+      <section class="position-relative bg-gradient" style="height: 590px;">
+        <div class="shape shape-bottom bg-body">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 250">
+            <g>
+              <path fill="currentColor" d="M3000,0v250H0v-51c572.7,34.3,1125.3,34.3,1657.8,0C2190.3,164.8,2637.7,98.4,3000,0z"></path>
+            </g>
+          </svg>
+        </div>
+      </section>
+      <!-- Contact details + Form-->
+      <section class="container position-relative zindex-5 py-7" style="margin-top: -590px;">
+        <div class="row pt-md-4 pt-lg-5 mt-3">
+          <div class="col-lg-5 col-md-5">
+            <p class="text-light mb-3 pb-4 pt-sm-3 fw-medium" style="font-size: 24px;">새로운 문화를 함께 만들어가는<br/>파트너가 되어주세요</p>
+            <!-- <div class="d-flex align-items-start mb-4"><i class="ai-map-pin h3 mb-0 text-light"></i>
+              <div class="ps-3">
+                <p class="text-light mb-2">396 Lillian Blvd, Holbrook,<br>NY 11741, USA</p><a class="fancy-link text-light fs-sm" href="#map" data-scroll>See on the map</a>
+              </div>
+            </div> -->
+            <div class="d-flex align-items-start mb-1"><i class="ai-mail h3 mt-n1 mb-0 text-light" style="padding-top: 2px;"></i>
+              <div class="ps-2 ps-md-3"><a class="d-inline-block text-light text-decoration-none mb-2 fs-md-xl" href="mailto:contact@example.com">contact@example.com</a></div>
+            </div>
+            <div class="d-flex align-items-start mb-5"><i class="ai-phone h3 mt-n1 mb-0 text-light" style="padding-top: 2px;"></i>
+              <div class="ps-2 ps-md-3"><a class="d-inline-block text-light text-decoration-none mb-2 fs-md-xl" href="tel:+15262200459">+1 526 220 0459</a></div>
+            </div>
+          </div>
+          <div class="col-xl-7 col-md-7">
+            <div class="card border-0 shadow-lg">
+              <div class="card-body py-5 px-3 px-sm-4">
+                <h4 class="text-center fw-medium">무엇이든 물어보세요!</h4>
+                <p class="fs-sm text-muted text-center">카테고리 선택 후 문의 내용을 작성해주세요.<br/>영업일 기준 2일 내로 답변을 보내드립니다.</p>
+                <form class="needs-validation pt-2 px-md-3" novalidate>
+                  <div class="row">
+                    <div class="col-md-6 mb-3 pb-1">
+                      <label class="form-label" for="cont-fn">카테고리</label>
+                      <input class="form-control" type="text" id="cont-category" placeholder="선택..." required>
+                      <div class="invalid-feedback">카테고리를 선택해주세요.</div>
+                    </div>
+                    <div class="col-md-6 mb-3 pb-1">
+                      <label class="form-label" for="cont-fn">단체/기업명</label>
+                      <input class="form-control" type="text" id="cont-name" placeholder="회사 담끼" required>
+                      <div class="invalid-feedback">단체/기업명을 기입해주세요.</div>
+                    </div>
+                    <div class="col-md-6 mb-3 pb-1">
+                      <label class="form-label" for="cont-email">이메일</label>
+                      <input class="form-control" type="email" id="cont-email" placeholder="damkki@example.com" required>
+                      <div class="invalid-feedback">이메일을 기입해주세요.</div>
+                    </div>
+                  </div>
+                  <div class="mb-3 pb-1">
+                    <label class="form-label" for="cont-subject">연락처</label>
+                    <input class="form-control" type="text" id="cont-phone" placeholder="01012345678" required>
+                    <div class="invalid-feedback">연락처를 기입해주세요.</div>
+                  </div>
+                  <div class="mb-3 pb-1">
+                    <label class="form-label" for="cont-message">문의 내용</label>
+                    <textarea class="form-control" id="cont-message" rows="5" placeholder="문의 내용을 작성해주세요" required></textarea>
+                    <div class="invalid-feedback">문의 내용을 1글자 이상 작성해주세요.</div>
+                  </div>
+                  <div class="text-center pt-2">
+                    <button class="btn btn-primary" type="submit">제출하기</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="bg-md-secondary py-6 px-md-4 mt-md-0 mb-4 pt-md-7">
+        <div class="container position-relative zindex-5">
+        <div class="row align-items-end align-items-md-start me-0">
+          <!-- <div class="col-md-2"></div> -->
+          <div class="col-md-4 pb-4 pb-md-6 pt-lg-2 text-center text-md-start">
+            <h3 class="pb-1">많은 분들이 궁금해했어요</h2>
+            <!-- <p class="mx-auto mb-5 mx-md-0" style="max-width: 496px;">고객은 무료로 서비스를 이용하고,<br/>음식점은 일회용품 가격에 다회용기를 사용하여<br/>우리 모두가 환경을 지킵니다.</p> -->
+            <!-- <div class="mt-n1"><a class="fancy-link" href="#">음식점 가맹 문의</a><i class="ai-chevron-right" style="color: #FF3932; font-size: 22px;"></i></div> -->
+          </div>
+          <div class="col-md-7 col-xl-7 offset-lg-1 jus">
+            <!-- Flush accordion. Use this when you need to render accordions edge-to-edge with their parent container -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">배달용기는 어떤 재질인가요?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">주방용품에 가장 이상적인 304계열의 스테인리스 밀폐용기를 사용하고 있습니다.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">왜 스테인리스인가요?</button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">고온과 저온에 강한 스테인리스 용기는 뜨거운 음식을 담아도 환경호르몬이 발생하지 않고, 내구성이 강해 흠집에 의한 세균번식이나 부패를 방지합니다.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">식사 후 어떻게 반납하나요?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">용기의 뚜껑을 닫아 배달가방에 담은 후 가까운 반납함에 반납하시면 됩니다.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">서비스 이용 시 요금이 발생하나요?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="flush-collapseFour" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">담끼 가맹음식점을 통해 무료로 서비스를 이용하실 수 있습니다.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">우리집에서도 이용할 수 있나요?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="flush-collapseFive" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">현재 성남시 분당구 일부지역에서 서비스를 제공하고 있으며, 자세한 내용은 '가맹점 안내'를 참고해주세요.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">식기는 언제까지 반납하면 되나요?</button>
+                </h2>
+                <div class="accordion-collapse collapse" id="flush-collapseSix" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">맛있게 식사하신 후, 음식주문시간부터 12시간 이내에 가까운 반납함에 담아주세요.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer class="footer container">
+        <div class="col-xl-6 col-lg-5 col-md-4 mb-5 mb-md-2 w-100 text-center text-md-start">
+          <div class="pt-2"><a class="btn-social bs-outline bs-lg bs-facebook me-2 mb-2" href="#"><i class="ai-instagram"></i></a><a class="btn-social bs-outline bs-lg bs-twitter me-2 mb-2" href="#"><i class="ai-message-circle"></i></a><a class="btn-social bs-outline bs-lg bs-instagram me-2 mb-2" href="#"><i class="ai-phone"></i></a><a class="btn-social bs-outline bs-lg bs-google me-2 mb-2" href="#"><i class="ai-mail"></i></a></div>
+        </div>
+        <!-- <div class="col-xl-6 col-lg-7 col-md-8 mb-5">
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Company</h4>
+                <ul>
+                  <li><a class="widget-link" href="#">About</a></li>
+                  <li><a class="widget-link" href="#">Jobs</a></li>
+                  <li><a class="widget-link" href="#">Contacts</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Services</h4>
+                <ul>
+                  <li><a class="widget-link" href="#">Strategy</a></li>
+                  <li><a class="widget-link" href="#">HR &amp; Talent</a></li>
+                  <li><a class="widget-link" href="#">Training</a></li>
+                  <li><a class="widget-link" href="#">Analytics</a></li>
+                  <li><a class="widget-link" href="#">Sales &amp; Marketing</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-none d-sm-block col-sm-4">
+              <div class="widget">
+                <h4 class="widget-title">Our news</h4>
+                <ul>
+                  <li><a class="widget-link" href="#">Latest news</a></li>
+                  <li><a class="widget-link" href="#">Insights</a></li>
+                  <li><a class="widget-link" href="#">Campaigns</a></li>
+                  <li><a class="widget-link" href="#">Events</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!-- </div> -->
+      <div class="border-top py-4">
+        <div class="d-md-flex justify-content-between py-2 text-md-start">
+          <ul class="list-inline fs-sm mb-5 mb-md-0 order-md-2 text-center">
+            <li class="list-inline-item me-5"><a class="nav-link-style text-muted" href="#">서비스이용약관</a></li>
+            <li class="list-inline-item"><a class="nav-link-style text-muted" href="#">개인정보처리방침</a></li>
+            <!-- <li class="list-inline-item my-1"><a class="nav-link-style" href="#">Terms &amp; Conditions</a></li> -->
+          </ul>
+          <div class="d-none d-lg-block">
+            <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">주식회사 담끼 | 사업자등록번호: 000-00-00000 | 주소: 경기도 분당구 ㅇㅇ로 00길 0 | 전화번호: 02-000-000 | 이메일: example@email.com</span></p>
+            <!-- <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">주소: 경기도 분당구 ㅇㅇ로 00길 0</span></p> -->
+            <!-- <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">전화번호: 02-000-000 | 이메일: example@email.com</span></p> -->
+            <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">© copyright 2021 담끼 All rights reserved.</span>
+          </div>
+          <div class="d-lg-none">
+            <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">주식회사 그리노늘 | 사업자등록번호: 000-00-00000</span></p>
+            <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">주소: 경기도 분당구 ㅇㅇ로 00길 0</span></p>
+            <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">전화번호: 02-000-000 | 이메일: example@email.com</span></p>
+            <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">© copyright 2021 그리노늘 All rights reserved.</span>
+          </div>
+          <!-- <a class="nav-link-style fw-normal" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>--></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+</html>

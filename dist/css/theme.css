@@ -11518,6 +11518,9 @@ fieldset:disabled .btn {
   .fs-md-xl {
     font-size: 1.25rem !important;
   }
+  .fs-md-2xl {
+    font-size: 1.5rem !important;
+  }
 }
 
 @media (min-width: 992px) {

@@ -58,7 +58,7 @@
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
         font-weight: normal;
-        color: #737491;
+        color: rgba(0, 0, 0, 0.60);
       }
       .page-spinner {
         display: inline-block;
@@ -66,7 +66,7 @@
         height: 2.75rem;
         margin-bottom: .75rem;
         vertical-align: text-bottom;
-        border: .15em solid #766df4;
+        border: .15em solid #ffcd00;
         border-right-color: transparent;
         border-radius: 50%;
         -webkit-animation: spinner .75s linear infinite;
@@ -405,10 +405,18 @@
                     <textarea class="form-control" id="cont-message" rows="5" placeholder="문의 내용을 작성해주세요" required></textarea>
                     <div class="invalid-feedback">문의 내용을 1글자 이상 작성해주세요.</div>
                   </div>
-                  <div class="mb-3 pb-1">
-                    <label class="form-label" for="cont-message">문의 내용<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
-                    <div class="form-control" placeholder="문의 내용을 작성해주세요" required></div>
-                    <div class="invalid-feedback">문의 내용을 1글자 이상 작성해주세요.</div>
+                  <div class="mb-1 pb-1">
+                    <label class="form-label" for="cont-message">개인정보 수집 및 이용 동의<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
+                    <div class="form-control overflow-scroll" style="height: 120px;">
+                      주식회사 담끼(이하회사라고한다)는 개인정보 보호법 제30조에 따라 정보 주제의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 성심성의껏 노력하겠습니다! 담끼!
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" style="margin-top: 6px;" type="checkbox" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">개인정보 수집 및 이용에 동의함</label>
+                      <div class="invalid-feedback">제출 전에 동의해주세요.</div>
+                    </div>
                   </div>
                   <div class="text-center pt-2">
                     <button class="btn btn-primary" type="submit">제출하기</button>
@@ -436,7 +444,7 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed fs-6 fs-md-xl fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">배달용기는 어떤 재질인가요?</button>
+                  <button class="accordion-button collapsed fs-6 fs-md-xl" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">배달용기는 어떤 재질인가요?</button>
                 </h2>
                 <div class="accordion-collapse collapse" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">주방용품에 가장 이상적인 304계열의 스테인리스 밀폐용기를 사용하고 있습니다.</div>
@@ -444,7 +452,7 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button fs-6 fs-md-xl fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">왜 스테인리스인가요?</button>
+                  <button class="accordion-button fs-6 fs-md-xl" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">왜 스테인리스인가요?</button>
                 </h2>
                 <div class="accordion-collapse collapse show" id="flush-collapseTwo" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">고온과 저온에 강한 스테인리스 용기는 뜨거운 음식을 담아도 환경호르몬이 발생하지 않고, 내구성이 강해 흠집에 의한 세균번식이나 부패를 방지합니다.</div>
@@ -452,7 +460,7 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed fs-6 fs-md-xl fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">식사 후 어떻게 반납하나요?</button>
+                  <button class="accordion-button collapsed fs-6 fs-md-xl" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">식사 후 어떻게 반납하나요?</button>
                 </h2>
                 <div class="accordion-collapse collapse" id="flush-collapseThree" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">용기의 뚜껑을 닫아 배달가방에 담은 후 가까운 반납함에 반납하시면 됩니다.</div>
@@ -460,7 +468,7 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed fs-6 fs-md-xl fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">서비스 이용 시 요금이 발생하나요?</button>
+                  <button class="accordion-button collapsed fs-6 fs-md-xl" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">서비스 이용 시 요금이 발생하나요?</button>
                 </h2>
                 <div class="accordion-collapse collapse" id="flush-collapseFour" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">담끼 가맹음식점을 통해 무료로 서비스를 이용하실 수 있습니다.</div>
@@ -468,7 +476,7 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed fs-6 fs-md-xl fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">우리집에서도 이용할 수 있나요?</button>
+                  <button class="accordion-button collapsed fs-6 fs-md-xl" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">우리집에서도 이용할 수 있나요?</button>
                 </h2>
                 <div class="accordion-collapse collapse" id="flush-collapseFive" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">현재 성남시 분당구 일부지역에서 서비스를 제공하고 있으며, 자세한 내용은 '가맹점 안내'를 참고해주세요.</div>
@@ -476,7 +484,7 @@
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingSix">
-                  <button class="accordion-button collapsed fs-6 fs-md-xl fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">식기는 언제까지 반납하면 되나요?</button>
+                  <button class="accordion-button collapsed fs-6 fs-md-xl" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">식기는 언제까지 반납하면 되나요?</button>
                 </h2>
                 <div class="accordion-collapse collapse" id="flush-collapseSix" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">맛있게 식사하신 후, 음식주문시간부터 12시간 이내에 가까운 반납함에 담아주세요.</div>

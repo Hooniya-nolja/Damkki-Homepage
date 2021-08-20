@@ -193,13 +193,16 @@
       </div>
       <!-- Navbar Floating light for Index page only-->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-      <header class="header navbar navbar-expand-lg navbar-light navbar-sticky navbar-shadow" data-fixed-element>
+      <header class="header navbar navbar-expand-lg navbar-light navbar-sticky bg-primary" data-fixed-element>
         <div class="container px-0 px-xl-3">
-          <button class="navbar-toggler ms-n2 me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 d-none d-lg-block mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="navbar-floating-logo mt-1" src="img/damggi/logo_small.svg" alt="damkki" width="51"></a><h6 class="d-lg-none text-dark mb-0 fw-medium">문의 및 FAQ</h6>
-            <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
-              <a class="btn btn-primary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
-              <a class="btn btn-primary d-lg-none text-decoration-none" style="width: 84px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
-            </div>          
+          <button class="navbar-toggler ms-n2 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+            <i class="ai-menu" style="font-size: 30px;"></i>
+          </button>
+          <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4 ms-4 me-6" href="index.html">
+            <img class="d-none d-lg-block mt-1" src="img/damggi/logo_dotori.svg" alt="damkki" width="51">
+            <img class="d-lg-none" style="margin-bottom: 6px;" src="img/damggi/FAQ.svg" alt="damkki" width="75">
+          </a>
+          <div></div>       
             <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
             <div class="offcanvas-header navbar-shadow">
               <!-- <h5 class="mt-1 mb-0">Menu</h5> -->
@@ -218,7 +221,9 @@
                   </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="hygienic_safety.html">위생&안전</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contact.html">문의 및 FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">서비스 지역</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">환경 효과</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">문의·FAQ</a></li>
 
 
                 <!-- <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Templates</a>
@@ -325,7 +330,18 @@
       <!-- Page content-->
       <!-- Intro-->
       <!-- Background shape-->
-      <section class="position-relative bg-gradient" style="height: 590px;">
+      <section class="position-absolute bg-success" style="height: 800px;">
+        <div class="shape shape-bottom bg-body">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 250">
+            <g>
+              <path fill="currentColor" d="M3000,0v250H0v-51c572.7,34.3,1125.3,34.3,1657.8,0C2190.3,164.8,2637.7,98.4,3000,0z"></path>
+            </g>
+          </svg>
+        </div>
+      </section>
+      <div class="position-absolute bg-success" style="height: 800px;"></div>
+
+      <section class="position-relative bg-primary" style="height: 590px;">
         <div class="shape shape-bottom bg-body">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 250">
             <g>
@@ -335,7 +351,7 @@
         </div>
       </section>
       <!-- Contact details + Form-->
-      <section class="container position-relative zindex-5 py-7" style="margin-top: -590px;">
+      <section class="container position-relative zindex-5 py-5" style="margin-top: -590px;">
         <div class="row pt-md-4 pt-lg-5 mt-3">
           <div class="col-lg-5 col-md-5">
             <p class="text-light mb-3 pb-4 pt-sm-3 fw-medium" style="font-size: 24px;">새로운 문화를 함께 만들어가는<br/>파트너가 되어주세요</p>
@@ -359,29 +375,39 @@
                 <form class="needs-validation pt-2 px-md-3" novalidate>
                   <div class="row">
                     <div class="col-md-6 mb-3 pb-1">
-                      <label class="form-label" for="cont-fn">카테고리</label>
+                      <label class="form-label" for="cont-fn">카테고리<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
                       <input class="form-control" type="text" id="cont-category" placeholder="선택..." required>
                       <div class="invalid-feedback">카테고리를 선택해주세요.</div>
                     </div>
                     <div class="col-md-6 mb-3 pb-1">
-                      <label class="form-label" for="cont-fn">단체/기업명</label>
+                      <label class="form-label" for="cont-fn">단체/기업명<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
                       <input class="form-control" type="text" id="cont-name" placeholder="회사 담끼" required>
                       <div class="invalid-feedback">단체/기업명을 기입해주세요.</div>
                     </div>
                     <div class="col-md-6 mb-3 pb-1">
-                      <label class="form-label" for="cont-email">이메일</label>
+                      <label class="form-label" for="cont-email">이메일<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
                       <input class="form-control" type="email" id="cont-email" placeholder="damkki@example.com" required>
                       <div class="invalid-feedback">이메일을 기입해주세요.</div>
                     </div>
+                    <div class="col-md-6 mb-3 pb-1">
+                      <label class="form-label" for="cont-subject">연락처<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
+                      <input class="form-control" type="text" id="cont-phone" placeholder="01012345678" required>
+                      <div class="invalid-feedback">연락처를 기입해주세요.</div>
+                    </div>
                   </div>
-                  <div class="mb-3 pb-1">
-                    <label class="form-label" for="cont-subject">연락처</label>
+                  <!-- <div class="mb-3 pb-1">
+                    <label class="form-label" for="cont-subject">연락처<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
                     <input class="form-control" type="text" id="cont-phone" placeholder="01012345678" required>
                     <div class="invalid-feedback">연락처를 기입해주세요.</div>
+                  </div> -->
+                  <div class="mb-3 pb-1">
+                    <label class="form-label" for="cont-message">문의 내용<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
+                    <textarea class="form-control" id="cont-message" rows="5" placeholder="문의 내용을 작성해주세요" required></textarea>
+                    <div class="invalid-feedback">문의 내용을 1글자 이상 작성해주세요.</div>
                   </div>
                   <div class="mb-3 pb-1">
-                    <label class="form-label" for="cont-message">문의 내용</label>
-                    <textarea class="form-control" id="cont-message" rows="5" placeholder="문의 내용을 작성해주세요" required></textarea>
+                    <label class="form-label" for="cont-message">문의 내용<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
+                    <div class="form-control" placeholder="문의 내용을 작성해주세요" required></div>
                     <div class="invalid-feedback">문의 내용을 1글자 이상 작성해주세요.</div>
                   </div>
                   <div class="text-center pt-2">

@@ -354,17 +354,17 @@
       <section class="container position-relative zindex-5 py-5" style="margin-top: -590px;">
         <div class="row pt-md-4 pt-lg-5 mt-3">
           <div class="col-lg-5 col-md-5">
-            <p class="text-light mb-3 pb-4 pt-sm-3 fw-medium" style="font-size: 24px;">새로운 문화를 함께 만들어가는<br/>파트너가 되어주세요</p>
+            <p class="text-white mb-3 pb-4 pt-sm-3 fw-medium" style="font-size: 24px;">새로운 문화를 함께 만들어가는<br/>파트너가 되어주세요</p>
             <!-- <div class="d-flex align-items-start mb-4"><i class="ai-map-pin h3 mb-0 text-light"></i>
               <div class="ps-3">
                 <p class="text-light mb-2">396 Lillian Blvd, Holbrook,<br>NY 11741, USA</p><a class="fancy-link text-light fs-sm" href="#map" data-scroll>See on the map</a>
               </div>
             </div> -->
-            <div class="d-flex align-items-start mb-1"><i class="ai-mail h3 mt-n1 mb-0 text-light" style="padding-top: 2px;"></i>
-              <div class="ps-2 ps-md-3"><a class="d-inline-block text-light text-decoration-none mb-2 fs-md-xl" href="mailto:contact@example.com">contact@example.com</a></div>
+            <div class="d-flex align-items-start mb-1"><i class="ai-mail h3 mt-n1 mb-0 text-white" style="padding-top: 2px;"></i>
+              <div class="ps-2 ps-md-3"><a class="d-inline-block text-white text-decoration-none mb-2 fs-md-xl" href="mailto:contact@example.com">contact@example.com</a></div>
             </div>
-            <div class="d-flex align-items-start mb-5"><i class="ai-phone h3 mt-n1 mb-0 text-light" style="padding-top: 2px;"></i>
-              <div class="ps-2 ps-md-3"><a class="d-inline-block text-light text-decoration-none mb-2 fs-md-xl" href="tel:+15262200459">+1 526 220 0459</a></div>
+            <div class="d-flex align-items-start mb-5"><i class="ai-phone h3 mt-n1 mb-0 text-white" style="padding-top: 2px;"></i>
+              <div class="ps-2 ps-md-3"><a class="d-inline-block text-white text-decoration-none mb-2 fs-md-xl" href="tel:+15262200459">+1 526 220 0459</a></div>
             </div>
           </div>
           <div class="col-xl-7 col-md-7">
@@ -375,9 +375,18 @@
                 <form class="needs-validation pt-2 px-md-3" novalidate>
                   <div class="row">
                     <div class="col-md-6 mb-3 pb-1">
+                      <label for="validationCustom04" class="form-label">카테고리<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option class="text-black-60" value="">선택...</option>
+                        <option value="Arizona">음식점 가맹문의</option>
+                        <option value="Colorado">담끼 지역제안</option>
+                        <option value="Florida">기타</option>
+                      </select>
+                      <div class="invalid-feedback">카테고리를 선택해주세요.</div>
+<!-- 
                       <label class="form-label" for="cont-fn">카테고리<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
                       <input class="form-control" type="text" id="cont-category" placeholder="선택..." required>
-                      <div class="invalid-feedback">카테고리를 선택해주세요.</div>
+                      <div class="invalid-feedback">카테고리를 선택해주세요.</div> -->
                     </div>
                     <div class="col-md-6 mb-3 pb-1">
                       <label class="form-label" for="cont-fn">단체/기업명<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
@@ -395,11 +404,6 @@
                       <div class="invalid-feedback">연락처를 기입해주세요.</div>
                     </div>
                   </div>
-                  <!-- <div class="mb-3 pb-1">
-                    <label class="form-label" for="cont-subject">연락처<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
-                    <input class="form-control" type="text" id="cont-phone" placeholder="01012345678" required>
-                    <div class="invalid-feedback">연락처를 기입해주세요.</div>
-                  </div> -->
                   <div class="mb-3 pb-1">
                     <label class="form-label" for="cont-message">문의 내용<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
                     <textarea class="form-control" id="cont-message" rows="5" placeholder="문의 내용을 작성해주세요" required></textarea>

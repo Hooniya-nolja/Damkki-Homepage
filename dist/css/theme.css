@@ -3377,7 +3377,8 @@ progress {
 .form-control:focus {
   color: #737491;
   background-color: #fff;
-  border-color: rgba(118, 109, 244, 0.35);
+  /* border-color: rgba(118, 109, 244, 0.35); */
+  border-color: #BDDCD3;
   outline: 0;
   box-shadow: 0 0 0 0 transparent, 0 0.375rem 0.625rem -0.3125rem rgba(118, 109, 244, 0.15);
 }
@@ -3654,8 +3655,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-  background-color: #766df4;
-  border-color: #766df4;
+  background-color: #45806A;
+  border-color: #45806A;
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -7996,7 +7997,7 @@ fieldset:disabled .btn {
 }
 
 .overflow-scroll {
-  overflow: scroll !important;
+  overflow-y: auto !important;
 }
 
 .d-inline {
@@ -9523,6 +9524,10 @@ fieldset:disabled .btn {
 
 .text-reset {
   color: inherit !important;
+}
+
+.text-black-60 {
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .bg-primary {

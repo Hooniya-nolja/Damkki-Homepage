@@ -9544,7 +9544,7 @@ fieldset:disabled .btn {
 }
 
 .bg-secondary {
-  background-color: #f7f7fc !important;
+  background-color: #FFCD00 !important;
 }
 
 .bg-success {
@@ -12390,6 +12390,9 @@ fieldset:disabled .btn {
   }
   .fs-lg-2xl {
     font-size: 1.5rem !important;
+  }
+  .fw-lg-bold {
+    font-weight: 700 !important;
   }
 }
 

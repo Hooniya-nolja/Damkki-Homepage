@@ -193,13 +193,20 @@
       </div>
       <!-- Navbar Floating light for Index page only-->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-      <header class="header navbar navbar-expand-lg navbar-light navbar-sticky navbar-shadow" data-fixed-element>
+      <header class="header navbar navbar-expand-lg navbar-light navbar-sticky bg-primary" data-fixed-element>
         <div class="container px-0 px-xl-3">
-          <button class="navbar-toggler ms-n2 me-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand flex-shrink-0 order-lg-1 d-none d-lg-block mx-auto ms-lg-0 pe-lg-2 me-lg-4" href="index.html"><img class="navbar-floating-logo mt-1" src="img/damggi/logo_small.svg" alt="damkki" width="51"></a><h6 class="d-lg-none text-dark mb-0 fw-medium">서비스</h6>
-            <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
-              <a class="btn btn-primary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
-              <a class="btn btn-primary d-lg-none text-decoration-none" style="width: 84px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
-            </div>          <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
+          <button class="navbar-toggler ms-n2 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+            <i class="ai-menu" style="font-size: 30px;"></i>
+          </button>
+          <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4 ms-4 me-2" href="index.html">
+            <img class="d-none d-lg-block mt-1" src="img/damggi/logo_dotori.svg" alt="damkki" width="51">
+            <img class="d-lg-none" style="margin-bottom: 6px;" src="img/damggi/service/text_service.svg" alt="damkki" width="46">
+          </a>
+          <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <a class="btn btn-outline-secondary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
+            <a class="btn btn-outline-secondary d-lg-none text-decoration-none" style="width: 91px; height: 40px; font-size: 16px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
+          </div>          
+          <div class="offcanvas offcanvas-collapse order-lg-2" id="primaryMenu">
             <div class="offcanvas-header navbar-shadow">
               <!-- <h5 class="mt-1 mb-0">Menu</h5> -->
               <!-- <img src="img/damggi/logo_text.svg" alt="Around" width="65"> -->
@@ -217,6 +224,8 @@
                   </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="hygienic_safety.html">위생&안전</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">서비스 지역</a></li>
+                <li class="nav-item"><a class="nav-link" href="environment.html">환경 효과</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">문의 및 FAQ</a></li>
 
 
@@ -372,8 +381,8 @@
         <p class="fs-xl fs-md-2xl fw-medium mb-5">그래서,<span class="fw-bold">반납함!</span> <br/> 함께 만드는 지속가능한 배달</p>
         <div class="container mt-6">
           <div class="row">
-            <img style="width: 70%;" src="img/damggi/service/rectangle.svg" alt="">
-            <div class="d-flex flex-md-column justify-content-around mt-4 ms-4 px-3 w-25" style="width: 25%;" >
+            <img class="w-md-70" src="img/damggi/service/rectangle.svg" alt="">
+            <div class="d-flex flex-md-column justify-content-around mt-4 ms-md-4 px-3 w-md-25">
               <div class="text-center">
                 <img src="img/damggi/service/dotori_1.svg" alt="">
                 <p class="fs-sm fs-md-base mt-2" style="margin-bottom: 2px;">분실 방지 장치로 <br class="d-lg-none"/> 안전하게 보관하니까</p>
@@ -387,25 +396,17 @@
             </div>
           </div>
         </div>
-      </section>
-
-
-      <section class="bg-secondary py-6 mt-md-0 pt-md-7">
-        <div class="container position-relative zindex-5">
-          <div class="row align-items-end align-items-md-start justify-content-between">
-            <!-- <div class="col-md-2"></div> -->
-            <div class="col-md-6 pb-5 pb-md-6 pt-md-6 text-center text-md-start">
-              <h3 class="pb-1">모두를 생각한 서비스, 담끼</h2>
-              <p class="mx-auto mb-5 mx-md-0" style="max-width: 496px;">맛있는 음식을 깨끗하게 먹고 싶은 소비자<br/>항상 고객을 먼저 생각하는 음식점<br/>늘어나는 쓰레기에 몸살을 앓고 있는 지구<br/><br/>담끼는 모두를 생각했습니다.</p>
-              <div class="mt-n1"><a class="fancy-link" href="#">음식점 가맹 문의</a><i class="ai-chevron-right" style="color: #FF3932; font-size: 22px;"></i></div>
-            </div>
-            <div class="col-md-6 col-xl-5 offset-xl-1 jus"><img class="d-block mx-auto" src="img/damggi/environment.jpg" alt="environment"></div>
-          </div>
+        <div class="bg-grey mt-5">
+          <img class="mb-1" src="img/damggi/service/bg_white.svg" alt="">
+          <p class="fs-md-xl fw-md-medium mt-6 mb-5">그 결과,</p>
+          <p class="fs-md-xl mb-2"><i class="ai-home fw-bold pb-1 pe-1"></i>음식점은 <span class="fw-bold">저렴한 가격</span>으로 <span class="fw-bold">다회용기</span> 사용</p>
+          <p class="fs-md-xl"><i class="ai-users fw-bold pb-1 pe-1"></i>배달 고객은 <span class="fw-bold">무료</span>로 <span class="fw-bold">서비스</span> 이용</p>
+          <img class="mt-5" src="img/damggi/service/bg_white_upside.svg" alt="">
         </div>
+        <p class="fs-md-xl mt-6 mb-0">반납함으로 향하는 <span class="fw-bold">당신의 한 걸음이</span><br/> 더 많은 사람들에게 <span class="fw-bold">깨끗한 배달</span>을 제공하고<br/> 더 많은 일회용품 쓰레기를 줄입니다.</p>
       </section>
 
-
-      <section class="bg-faded-light" id="howToUse">
+      <section class="bg-grey mb-4" id="howToUse">
         <div class="container py-6 py-md-6 py-lg-7">
           <div class="row">
             <h3 class="text-center mb-5">간편한 이용 방법</h2>
@@ -413,34 +414,36 @@
               <div class="tns-carousel-inner" data-carousel-options='{"gutter": 15, "controls": false, "items": 1,"autoplay": false, "loop": false, "responsive": {"767": {"items": 3}}}'>
                 <div class="card pe-0 mx-3">
                   <img src="img/damggi/environment.jpg" class="card-img-top" alt="Card image">
-                  <div class="card-body">
-                    <p class="card-text fs-6">주문하실 장소에서 담끼를 이용할 수 있는지<br/> 먼저 확인해주세요.</p>
-                    <a class="fancy-link fs-sm" href="#">서비스 지역 알아보기</a>
+                  <div class="card-body px-3 py-3">
+                    <p class="card-text fs-md-base fs-4vw">주문하실 장소에서 담끼를 이용할 수 있는지<br/> 먼저 확인해주세요.</p>
+                    <a class="fancy-link-green fs-sm" href="#">서비스 지역 알아보기</a>
+                    <i class="ai-chevron-right" style="color: #45806A; font-size: 18px;"></i>
                   </div>
                 </div>
                 <div class="card pe-0 mx-3">
                   <img src="img/damggi/environment.jpg" class="card-img-top" alt="Card image">
-                  <div class="card-body">
-                    <p class="card-text fs-6">배달 어플을 통해 담끼 가맹 음식점에서<br/>안내에 따라 음식을 주문해주세요.</p>
-                    <a class="fancy-link fs-sm" href="#">가맹 음식점 찾아보기</a>
+                  <div class="card-body px-3 py-3">
+                    <p class="card-text fs-md-base fs-4vw">배달 어플을 통해 담끼 가맹 음식점에서<br/>안내에 따라 음식을 주문해주세요.</p>
+                    <a class="fancy-link-green fs-sm" href="#">가맹 음식점 찾아보기</a>
+                    <i class="ai-chevron-right" style="color: #45806A; font-size: 18px;"></i>
                   </div>
                 </div>
                 <div class="card pe-0 mx-3">
                   <img src="img/damggi/environment.jpg" class="card-img-top" alt="Card image">
-                  <div class="card-body">
-                    <p class="card-text fs-6">맛있게 드신 후, 용기 뚜껑을 꽉 닫아서 <br/>배달 가방에 담아주세요.</p>
+                  <div class="card-body px-3 py-3">
+                    <p class="card-text fs-md-base fs-4vw">맛있게 드신 후, 용기 뚜껑을 꽉 닫아서 <br/>배달 가방에 담아주세요.</p>
                   </div>
                 </div>
                 <div class="card pe-0 mx-3">
                   <img src="img/damggi/environment.jpg" class="card-img-top" alt="Card image">
-                  <div class="card-body">
-                    <p class="card-text fs-6">가까운 반납함에 배달가방을 담아주시면<br/>반납 완료!</p>
+                  <div class="card-body px-3 py-3">
+                    <p class="card-text fs-md-base fs-4vw">가까운 반납함에 배달가방을 담아주시면<br/>반납 완료!</p>
                   </div>
                 </div>
                 <div class="card pe-0 mx-3">
                   <img src="img/damggi/environment.jpg" class="card-img-top" alt="Card image">
-                  <div class="card-body">
-                    <p class="card-text fs-6">반납된 식기는 깨끗이 세척하고 소독되어<br/> 다시 태어납니다 :)</p>
+                  <div class="card-body px-3 py-3">
+                    <p class="card-text fs-md-base fs-4vw">반납된 식기는 깨끗이 세척하고 소독되어<br/> 다시 태어납니다 :)</p>
                   </div>
                 </div>
 

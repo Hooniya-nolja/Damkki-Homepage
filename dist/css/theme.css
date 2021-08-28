@@ -11562,6 +11562,9 @@ fieldset:disabled .btn {
   .w-md-25 {
     width: 25% !important;
   }
+  .w-md-82 {
+    width: 82% !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -15704,7 +15707,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .dropdown-toggle::after {
-  margin-left: .25rem;
+  margin-left: .7rem;
   content: "";
 }
 

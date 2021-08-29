@@ -9511,7 +9511,7 @@ fieldset:disabled .btn {
 }
 
 .text-muted {
-  color: #9e9fb4 !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .text-heading {
@@ -15369,7 +15369,7 @@ input[type="search"]::-webkit-search-results-decoration {
   transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out, color 0.25s ease-in-out;
   border-radius: 0.5rem;
   background-color: #f3f3f9;
-  color: #6c6d89;
+  color: #45806A;
   font-size: 0.9375rem;
   text-align: center;
   text-decoration: none !important;
@@ -15425,7 +15425,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .bs-outline {
-  border-color: #e5e5ef;
+  border-color: rgba(69, 128, 106, 0.2);
   background-color: transparent;
 }
 

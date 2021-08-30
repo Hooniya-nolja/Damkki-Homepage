@@ -105,10 +105,10 @@
     <!-- Main Theme Styles + Bootstrap-->
     <!-- <link rel="stylesheet" media="screen" href="css/theme.min.css"> -->
     <link rel="stylesheet" media="screen" href="css/theme.css">
-    <base href="/">
+    <!-- <base href="/">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Expires" content="0"> -->
   </head>
   <!-- Body-->
   <body>
@@ -582,8 +582,6 @@
           } else {
             console.log('console Error: invalid area select');
           }
-
-
         }
       </script>
 
@@ -1004,12 +1002,13 @@
 
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> -->
-    <!-- <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
-
+    <!-- <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script> -->
+     -->
     <!-- Load our React component. -->
     <!-- <script type="module" src="RestaurantGuideIndex.js"></script> -->
 
-    <!-- <script type="module" src="RestaurantGuide.js"></script> -->
+    <!-- <script type="text/babel" src="./js/RestaurantGuideIndex.js"></script> -->
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
   </body>
 </html>

@@ -20472,7 +20472,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 
 .bg-img-opacity-80::before {
   content: "";
-  background-image: url(../img/damggi/home/background_table.svg);
+  background-image: url(../img/damggi/home/background_studio.jpg);
   background-size: cover;
   opacity: 0.6;
   position: absolute;

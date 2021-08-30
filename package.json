@@ -1,10 +1,12 @@
 {
-  "name": "around",
+  "name": "damkki",
   "version": "2.0.0",
-  "description": "Around - Multipurpose Bootstrap Template",
+  "description": "Damkki Homepage",
   "main": "index.html",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "dev": "babel-node dist/js/RestaurantGuideIndex.js"
   },
   "author": "https://createx.studio/",
   "license": "ISC",
@@ -12,7 +14,16 @@
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "browser-sync": "^2.26.14",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "concurrently": "^6.2.1",
+    "css-loader": "^6.2.0",
     "del": "^6.0.0",
     "emitty": "^1.4.0",
     "gulp": "^4.0.2",
@@ -24,9 +35,15 @@
     "gulp-rollup": "^2.17.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0"
   },
   "dependencies": {
+    "babel-node": "0.0.1-security",
     "bootstrap": "^5.0.1",
     "chartist": "^0.11.4",
     "cleave.js": "^1.6.0",
@@ -59,6 +76,5 @@
     "Safari >= 10",
     "Android >= 6",
     "not Explorer <= 11"
-  ],
-  "type": "module"
+  ]
 }

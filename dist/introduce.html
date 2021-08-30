@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Around | Multipurpose Bootstrap Template</title>
+    <title>다회용기 순환 서비스 담끼</title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="Around - Multipurpose Bootstrap Template">
     <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
@@ -10,9 +10,9 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/damggi/favicon/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/damggi/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/damggi/favicon/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#766df4">
@@ -198,9 +198,11 @@
           <button class="navbar-toggler ms-n2 me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
             <i class="ai-menu" style="font-size: 30px;"></i>
           </button>
-          <a class="navbar-brand flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4 ms-4 me-2" href="index.html">
-            <img class="d-none d-lg-block mt-1" src="img/damggi/logo_dotori.svg" alt="damkki" width="51">
-            <img class="d-lg-none" style="margin-bottom: 6px;" src="img/damggi/environment/navbar_text.svg" alt="damkki" width="75">
+          <a class="navbar-brand d-none d-lg-block flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4 ms-4 me-2" href="index.html">
+            <img class="mt-1" src="img/damggi/logo_dotori.svg" alt="damkki" width="51">
+          </a>
+          <a class="navbar-brand d-lg-none flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4 ms-4 me-2">
+            <img style="margin-bottom: 6px;" src="img/damggi/introduce/navbar_text.svg" alt="damkki" width="67">
           </a>
           <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
             <a class="btn btn-outline-secondary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
@@ -217,8 +219,8 @@
               <!-- Menu-->
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link active" href="introduce.html">담끼 소개</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="service.html" data-bs-toggle="dropdown">서비스</a>
-                  <ul class="dropdown-menu">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle show" href="service.html" data-bs-toggle="dropdown" aria-expanded="true">서비스</a>
+                  <ul class="dropdown-menu show" data-bs-popper="none">
                     <!-- <a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a> -->
                     <!--<div class="dropdown-column">--><li><a class="dropdown-item" href="service.html">시스템 소개</a></li><li><a class="dropdown-item" href="service.html#howToUse">이용 안내</a></li>
                   </ul>
@@ -331,16 +333,8 @@
         </div>
       </header>
       <!-- Page content-->
-      <!-- Intro-->
-      
-      <!-- <div class="d-flex flex-column align-items-center" style="height: 300px;">
-        <p>AAAAAAAAAAAA</p>
-        <div class="w-100 h-100 mb-5 d-flex flex-column-reverse align-items-center">
-          <span class="btn btn-primary w-50">세척 과정 확인하기</span>
-        </div>
-      </div> -->
 
-      <section class="row bg-primary text-center py-6">
+      <section class="row bg-primary text-center py-6 mx-0">
         <img class="d-md-none mx-auto" style="width: 198px;" src="img/damggi/introduce/slogan_small.svg" alt="">
         <img class="d-none d-md-block mx-auto" style="width: 478px;" src="img/damggi/introduce/slogan_large.svg" alt="">
         <div class="row mx-0">
@@ -777,31 +771,7 @@
       </div>
     </footer>
     <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll data-fixed-element><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ai-arrow-up">   </i></a>
-    <!-- Kakao Map API -->
-    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9f37938b88928e3c621223cbed15c2d6"></script>
-    <script>
-      let container = document.getElementById('map');
-      let options = {
-        center: new kakao.maps.LatLng(37.41454903496425, 127.13462691306036),
-        level: 3
-      };
 
-      let map = new kakao.maps.Map(container, options);
-
-      let imageSrc = "/img/damggi/marker.png",
-          imageSize = new kakao.maps.Size(40,55),
-          imageOption = {offset: new kakao.maps.Point(20, 54)};
-
-      let markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-          markerPosition = new kakao.maps.LatLng(37.41454903496425, 127.13462691306036);
-
-      let marker = new kakao.maps.Marker({
-          position: markerPosition, 
-          image: markerImage
-      });
-
-      marker.setMap(map);
-    </script> -->
     <!-- Vendor scrits: js libraries and plugins-->
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>

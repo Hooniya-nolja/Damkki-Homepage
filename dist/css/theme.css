@@ -563,6 +563,10 @@
   content: "";
 }
 
+.ai-home:hover {
+  color: #45806A;
+}
+
 .ai-image:before {
   content: "";
 }
@@ -15798,8 +15802,8 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   width: 100%;
   transition: all 0.25s ease-in-out;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .dropdown-item.active {
@@ -19647,7 +19651,7 @@ _:-ms-lang(x), .jarallax .jarallax-img {
     border-bottom: 1px solid #e9e9f2 !important;
   }
   .offcanvas-collapse .offcanvas-body .navbar-nav .nav-link {
-    color: #5a5b75;
+    color: rgba(0, 0, 0, 0.87);
   }
   .offcanvas-collapse .offcanvas-body .navbar-nav .nav-link:hover {
     color: #45806a;
@@ -20466,13 +20470,13 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   padding-bottom: 6.2%;
 }
 
-.bg-img-opacity-80 {
+/* .bg-img-opacity-80 {
   position: relative;
 }
 
 .bg-img-opacity-80::before {
   content: "";
-  background-image: url(../img/damggi/home/background_table.svg);
+  background-image: url(../img/damggi/home/background_table_picture.jpg);
   background-size: cover;
   opacity: 0.6;
   position: absolute;
@@ -20480,4 +20484,4 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   left: 0px;
   right: 0px;
   bottom: 0px;
-}
+} */

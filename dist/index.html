@@ -217,7 +217,9 @@
               <!-- Menu-->
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="introduce.html">담끼 소개</a></li>
-                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle show" href="service.html" data-bs-toggle="dropdown" aria-expanded="true">서비스</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle show" id="navbarServiceRow" href="service.html" onclick="changeArrow()"
+                  data-bs-toggle="dropdown" aria-expanded="true">서비스<i class="ai-chevron-up d-lg-none ms-1 mb-1" id="arrow"></i></a>
                   <ul class="dropdown-menu show" data-bs-popper="none">
                     <!-- <a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a> -->
                     <!--<div class="dropdown-column">--><li><a class="dropdown-item ms-3 ms-lg-0 mt-2 mb-2 my-lg-0" href="service.html">시스템 소개</a></li><li><a class="dropdown-item ms-3 ms-lg-0" href="service.html#howToUse">이용 안내</a></li>
@@ -379,14 +381,7 @@
         <a class="d-none d-md-block btn btn-primary fw-bold" style="width: 30%; height: 48px;">담끼 알아보기</a>
       </section>
 
-      
 
-      <!-- <div class="d-flex flex-column align-items-center" style="height: 300px;">
-        <p>AAAAAAAAAAAA</p>
-        <div class="w-100 h-100 mb-5 d-flex flex-column-reverse align-items-center">
-          <span class="btn btn-primary w-50">세척 과정 확인하기</span>
-        </div>
-      </div> -->
 
       <!-- Demos-->
       <!-- <section class="bg-secondary" id="demos">
@@ -819,6 +814,6 @@
     <script src="vendor/parallax-js/dist/parallax.min.js"></script>
     <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
     <!-- Main theme script-->
-    <script src="js/theme.min.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>

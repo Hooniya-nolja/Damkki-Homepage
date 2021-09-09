@@ -9510,6 +9510,10 @@ fieldset:disabled .btn {
   color: #fff !important;
 }
 
+.text-grey {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
 .text-body {
   color: #737491 !important;
 }
@@ -14197,15 +14201,44 @@ iframe {
 }
 
 ::-moz-selection {
-  background: rgba(118, 109, 244, 0.22);
+  background: #E3F0EE;
 }
 
 ::selection {
-  background: rgba(118, 109, 244, 0.22);
+  background: #E3F0EE;
 }
 
 ::-moz-selection {
-  background: rgba(118, 109, 244, 0.22);
+  background: #E3F0EE;
+}
+
+
+p.text-white::selection {
+  background: #34624E;
+}
+
+a.text-white::selection {
+  background: #34624E;
+}
+
+span.text-yellow::selection {
+  background: #34624E;
+}
+
+p.text-grey::selection {
+  background: #34624E;
+}
+
+a.fancy-link::selection {
+  background: #34624E;
+}
+
+a.nav-link::selection {
+  background: #34624E;
+}
+
+p[class~="text-white"] span::selection {
+  background: #34624E;
 }
 
 @media (min-width: 1280px) {
@@ -18673,6 +18706,10 @@ a.card-floating-icon:hover {
   .tns-carousel-wrapper .tns-carousel-inner.tns-horizontal:not(.tns-gallery) {
     display: block;
   }
+}
+
+.tns-nav {
+  padding-left: 0.4rem;
 }
 
 .tns-carousel-wrapper .tns-nav {

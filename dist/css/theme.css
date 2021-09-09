@@ -5088,13 +5088,13 @@ fieldset:disabled .btn {
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #766df4;
+  color: #45806A;
   text-decoration: none;
   background-color: transparent;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  color: #766df4;
+  color: #45806A;
   text-decoration: none;
   background-color: transparent;
 }
@@ -15712,7 +15712,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .dropdown-toggle::after {
   margin-left: .7rem;
-  /* content: ""; */
+  content: "";
 }
 
 .dropdown-toggle::before {

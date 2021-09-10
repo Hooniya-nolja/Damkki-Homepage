@@ -2,3 +2,6 @@
 
 개발: 장창훈
 디자인: 김영인, 최지혜
+
+사용한 개발 기술: HTML, CSS, Javascript, Bootstrap, Template & UIkit 'Around', npm
+그 외 사용한 것: cafe24 Web Hosting, VS code, Figma, FileZilla

@@ -11564,11 +11564,14 @@ fieldset:disabled .btn {
   .fs-md-2xl {
     font-size: 1.5rem !important;
   }
-  .w-md-70 {
-    width: 70% !important;
-  }
   .w-md-25 {
     width: 25% !important;
+  }
+  .w-md-50 {
+    width: 50% !important;
+  }
+  .w-md-70 {
+    width: 70% !important;
   }
   .w-md-82 {
     width: 82% !important;

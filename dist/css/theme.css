@@ -5758,6 +5758,10 @@ fieldset:disabled .btn {
   border-radius: 1rem;
 }
 
+#restaurantList > .card {
+  box-shadow: ;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -15747,7 +15751,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .dropdown-toggle::after {
-  margin-left: .7rem;
+  /* margin-left: .7rem; */
+  position: absolute;
+  right: 16px;
+  top: 8px;
   content: "";
 }
 

@@ -14208,7 +14208,7 @@ iframe {
 }
 
 ::selection {
-  background: #E3F0EE;
+  background: rgba(255, 205, 0, 0.2);
 }
 
 ::-moz-selection {
@@ -14216,7 +14216,7 @@ iframe {
 }
 
 
-p.text-white::selection {
+/* p.text-white::selection {
   background: #34624E;
 }
 
@@ -14242,7 +14242,7 @@ a.nav-link::selection {
 
 p[class~="text-white"] span::selection {
   background: #34624E;
-}
+} */
 
 @media (min-width: 1280px) {
   

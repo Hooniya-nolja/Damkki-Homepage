@@ -342,20 +342,79 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 text-center text-md-start pt-6 pt-md-0 pb-4">
-              <p class="text-white fs-xl fs-md-2xl fw-medium mb-4">내 근처 반납함 위치</p>
-              <p class="text-white fs-md-xl mb-2">담끼 이용 전, 주변에 반납함이 설치되어있는지<br/> 반드시 먼저 확인해주세요.</p>
-              <p class="fs-xs fs-md-base text-grey mt-1">현재 분당구 일대에서 베타서비스 진행 중입니다.</p>
+              <p class="text-white fs-xl fs-md-2xl fw-medium mb-4">반납 장소</p>
+              <p class="text-white fs-md-xl mb-2">가까운 반납함 위치를 확인해주세요.</p>
+              <p class="fs-xs fs-md-base text-grey mt-1 mb-0">'압구정볶는커피' 분당효자점 카페 입구</p>
             </div>
             <div class="d-flex flex-row-reverse col-md-8 px-0 pe-md-3">
-              <div id="kakaomap" class="w-md-82 w-100" style="height: 45vh;"></div>
+              <img src="img/damggi/service_area/map_returnbox.png" class="w-md-82 w-100 mb-4 mb-md-0"></div>
             </div>
+            <!-- <div class="d-flex flex-row-reverse col-md-8 px-0 pe-md-3">
+              <div id="kakaomap" class="w-md-82 w-100" style="height: 45vh;"></div>
+            </div> -->
           </div>
         </div>
       </section>
 
       <section class="container text-center pt-6 px-0 px-md-0">
         <p class="fs-xl fs-md-2xl fw-medium">가맹음식점 안내</p>
-        <div class="btn-group dropdown mt-5">
+        <p>현재 분당구 일대에서 베타서비스 중입니다</p>
+
+        <!-- <div class="bg-secondary mx-md-3 pt-3 pb-2 mt-4 fs-sm">
+          <i class="ai-check-circle fs-xl mb-1 me-3"></i>
+          <span class="fw-bold">서현동</span>의 <span class="fw-bold">모든</span> 가맹음식점 <span class="fw-bold">3개</span>를 보여드릴게요!
+        </div> -->
+
+        <div class="d-flex flex-md-row flex-column flex-wrap mb-5">
+          <div class="col-md-4">
+            <div class="card shadow-lg mx-3 my-3" style="cursor: pointer;" onclick="location.href='https://baemin.me/Cx7b6PvBTl';">
+              <img src="img/damggi/substitute_image.png" class="card-img-top" alt="Card image">
+              <div class="card-body text-start pt-3">
+                <div class="d-flex justify-content-between">
+                  <span class="card-title fw-medium">총각네파스타</span>
+                  <div>
+                    <img class="pb-1" src="img/damggi/service_area/tag_baemin.svg" alt="">
+                    <img class="pb-1" src="img/damggi/service_area/tag_yogiyo.svg" alt="">
+                  </div>
+                </div>
+                <p class="card-text fs-sm">치즈 미트볼 토마토 파스타, 브로콜리 까르보나라</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-lg mx-3 my-3">
+            <img src="img/damggi/substitute_image.png" class="card-img-top" alt="Card image">
+            <div class="card-body text-start pt-3">
+              <div class="d-flex justify-content-between">
+                <span class="card-title fw-medium">닭발에 꼬치닭 분당점</span>
+                <div>
+                  <img class="pb-1" src="img/damggi/service_area/tag_baemin.svg" alt="">
+                  <img class="pb-1" src="img/damggi/service_area/tag_yogiyo.svg" alt="">
+                </div>
+              </div>
+              <p class="card-text fs-sm">닭꼬치, 닭발, 맛있어 세트, 메뉴 이름, 메뉴 이름</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-lg mx-3 my-3">
+            <img src="img/damggi/substitute_image.png" class="card-img-top" alt="Card image">
+            <div class="card-body text-start pt-3">
+              <div class="d-flex justify-content-between">
+                <span class="card-title fw-medium">닭발에 꼬치닭 분당점</span>
+                <div>
+                  <img class="pb-1" src="img/damggi/service_area/tag_baemin.svg" alt="">
+                  <img class="pb-1" src="img/damggi/service_area/tag_yogiyo.svg" alt="">
+                </div>
+              </div>
+              <p class="card-text fs-sm">닭꼬치, 닭발, 맛있어 세트, 메뉴 이름, 메뉴 이름</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="btn-group dropdown mt-5">
           <button type="button" id="selectArea" class="btn btn-primary fw-medium dropdown-toggle" style="border-radius: 24px; width: 131px; padding: 7px 30px 7px 0;" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             지역 선택
           </button>
@@ -367,10 +426,7 @@
         </div>
         <div id="restaurantList">
           <div class="bg-secondary mx-md-3 py-3 mt-4 fs-sm"><i class="ai-alert-circle fs-xl pb-1 me-3"></i>배달 음식을 받을 지역을 먼저 선택해주세요.</div>
-          <!-- <div class="d-flex justify-content-center align-items-center" style="height: 500px;">
-            <p>배달 음식을 받을 지역을 먼저 선택해주세요!</p>
-          </div> -->
-        </div>
+        </div> -->
       </section>
 
 
@@ -1006,15 +1062,15 @@
               <!-- <li class="list-inline-item my-1"><a class="nav-link-style" href="#">Terms &amp; Conditions</a></li> -->
             </ul>
             <div class="d-none d-lg-block fs-xs">
-              <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">주식회사 그리노늘 | 사업자등록번호: 000-00-00000 | 주소: 경기도 분당구 ㅇㅇ로 00길 0 | 전화번호: 02-000-000 | 이메일: example@email.com</span></p>
+              <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">주식회사 그리노늘 | 사업자등록번호: 525-88-02242 | 주소: 경기도 성남시 중원구 도촌로7번길 4-7, B01(도촌동) | 전화번호: 070-4150-2233 | 이메일: greenoneul@gmail.com</span></p>
               <!-- <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">주소: 경기도 분당구 ㅇㅇ로 00길 0</span></p> -->
               <!-- <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">전화번호: 02-000-000 | 이메일: example@email.com</span></p> -->
               <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">© copyright 2021 담끼 All rights reserved.</span>
             </div>
             <div class="d-lg-none">
-              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">주식회사 그리노늘 | 사업자등록번호: 000-00-00000</span></p>
-              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">주소: 경기도 분당구 ㅇㅇ로 00길 0</span></p>
-              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">전화번호: 02-000-000 | 이메일: example@email.com</span></p>
+              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">주식회사 그리노늘 | 사업자등록번호: 525-88-02242</span></p>
+              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">주소: 경기도 성남시 중원구 도촌로7번길 4-7, B01(도촌동)</span></p>
+              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">전화번호: 070-4150-2233 | 이메일: greenoneul@gmail.com</span></p>
               <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">© copyright 2021 그리노늘 All rights reserved.</span>
             </div>
             <!-- <a class="nav-link-style fw-normal" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>--></p>

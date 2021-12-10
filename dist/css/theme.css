@@ -14643,8 +14643,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .was-validated .form-check-input:valid:checked,
 .was-validated .form-check-input.is-valid:checked {
-  border-color: #766df4;
-  background-color: #766df4;
+  border-color: #45806A;
+  background-color: #45806A;
   box-shadow: none;
 }
 

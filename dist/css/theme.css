@@ -5759,7 +5759,7 @@ fieldset:disabled .btn {
 }
 
 #restaurantList > .card {
-  box-shadow: ;
+  box-shadow: 0 0 0 0;
 }
 
 .card > hr {

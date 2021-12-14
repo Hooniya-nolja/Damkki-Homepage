@@ -5759,7 +5759,7 @@ fieldset:disabled .btn {
 }
 
 #restaurantList > .card {
-  box-shadow: ;
+  /* box-shadow: 0 0 0 0 ; */
 }
 
 .card > hr {
@@ -11567,6 +11567,9 @@ fieldset:disabled .btn {
   }
   .fs-md-2xl {
     font-size: 1.5rem !important;
+  }
+  .w-md-15 {
+    width: 15% !important;
   }
   .w-md-25 {
     width: 25% !important;

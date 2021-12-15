@@ -11588,6 +11588,9 @@ fieldset:disabled .btn {
   .fs-md-2xl {
     font-size: 1.5rem !important;
   }
+  .w-md-15 {
+    width: 15% !important;
+  }
   .w-md-25 {
     width: 25% !important;
   }
@@ -12448,6 +12451,9 @@ fieldset:disabled .btn {
   }
   .fw-lg-medium {
     font-weight: 500 !important;
+  }
+  .w-lg-15 {
+    width: 15% !important;
   }
 }
 

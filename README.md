@@ -6,4 +6,4 @@
 
 - 사용한 개발 기술: HTML, CSS, Javascript, Bootstrap, Template & UIkit 'Around', npm
 
-- 그 외 사용한 것: cafe24 Web Hosting, VS code, Figma, FileZilla
+- 그 외 사용한 것: cafe24 Web Hosting, VS code, Figma, FileZilla, zeroSSL

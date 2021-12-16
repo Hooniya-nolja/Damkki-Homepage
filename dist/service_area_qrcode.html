@@ -91,7 +91,9 @@
       (function () {
         window.onload = function () {
           var preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.classList.remove('active');
+          }, 200);
           setTimeout(function () {
             preloader.remove();
           }, 2000);
@@ -109,9 +111,11 @@
   <!-- Body-->
   <body>
     <!-- Page loading spinner-->
-    <div class="page-loading active">
+    <div class="page-loading active bg-primary">
       <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
+        <div class="bg-primary">
+          <img class="w-md-25" src="img/damggi/text_slogan_korean.svg" width="250" alt="slogan">
+        </div>
       </div>
     </div>
     <main class="page-wrapper">

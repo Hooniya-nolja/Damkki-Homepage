@@ -93,7 +93,7 @@
           var preloader = document.querySelector('.page-loading');
           setTimeout(function () {
             preloader.classList.remove('active');
-          }, 200);
+          }, 600);
           setTimeout(function () {
             preloader.remove();
           }, 2000);
@@ -712,7 +712,7 @@
         <!-- <a href="contact.html"><button class="btn btn-secondary fw-bold" type="submit">담세권 제안하기</button></a> -->
 
         <div class="container w-md-50 text-start">
-        <form class="needs-validation pt-2 px-md-3" id="contactForm" onsubmit="sendEmail(event);" novalidate>
+        <form class="needs-validation pt-2 px-md-3" id="opinionForm" onsubmit="sendEmail(event);" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3 pb-1">
               <label class="form-label text-white" for="email">이메일<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
@@ -720,8 +720,8 @@
               <div class="invalid-feedback">이메일을 기입해주세요.</div>
             </div>
             <div class="col-md-6 mb-3 pb-1">
-              <label class="form-label text-white" for="phone">주소<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
-              <input class="form-control" type="text" id="phone" placeholder="간단히 기재해주세요 (ex 서현동 대우아파트)" required>
+              <label class="form-label text-white" for="address">주소<img class="ps-1" style="padding-bottom: 10px;" src="img/damggi/dot.svg" alt="dot"></label>
+              <input class="form-control" type="text" id="address" placeholder="간단히 기재해주세요 (ex 서현동 대우아파트)" required>
               <div class="invalid-feedback">주소를 기입해주세요.</div>
             </div>
           </div>
@@ -1115,6 +1115,32 @@
     <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="vendor/parallax-js/dist/parallax.min.js"></script>
     <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+         emailjs.init("user_pGtWjLaz4Bi75zVO1Pa94");
+        })();      
+      function sendEmail(e) {
+        e.preventDefault();
+        console.log(e.target.category);
+        let templateParams = {
+          email: document.getElementById('email').value,
+          phone: document.getElementById('address').value,  // address를 임시로 phone으로 이름 대체중 - EmailJS
+          message: document.getElementById('message').value
+        };
+
+        if (templateParams.email && templateParams.phone && templateParams.message) {
+          emailjs.send('service_2ltc1pm', 'template_fznfwqk', templateParams)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert(`감사합니다. \n더 많은 음식점에서 다회용기가 사용 될 수 있도록 노력할게요.`);
+            window.location.reload();
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+        }
+      }
+    </script>
     <!-- Main theme script-->
     <script src="js/theme.min.js"></script>
     <script src="js/theme-damkki.js"></script>

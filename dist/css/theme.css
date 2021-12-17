@@ -4293,6 +4293,26 @@ fieldset:disabled .btn {
   border-color: rgba(61, 113, 92, 0.38);
 }
 
+.btn-primary-form {
+  color: rgb(255, 255, 255);
+  background-color: #3D715C;
+  border-color: #3D715C;
+  box-shadow: unset;
+}
+
+.btn-primary-form:hover {
+  color: rgb(255, 255, 255);
+  background-color: #34614f;
+  border-color: #34614f;
+}
+
+.btn-check:focus + .btn-primary-form, .btn-primary-form:focus {
+  color: rgb(255, 255, 255);
+  background-color: #34614f;
+  border-color: #34614f;
+  box-shadow: unset, 0 0 0 0 rgba(100, 93, 207, 0.5);
+}
+
 .btn-secondary {
   color: #45806A;
   background-color: #ffffff;
@@ -5759,7 +5779,7 @@ fieldset:disabled .btn {
 }
 
 #restaurantList > .card {
-  /* box-shadow: 0 0 0 0 ; */
+  box-shadow: 0 0 0 0;
 }
 
 .card > hr {
@@ -12431,6 +12451,9 @@ fieldset:disabled .btn {
   }
   .fw-lg-medium {
     font-weight: 500 !important;
+  }
+  .w-lg-15 {
+    width: 15% !important;
   }
 }
 

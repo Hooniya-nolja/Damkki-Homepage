@@ -202,7 +202,7 @@
             <img class="mt-1 mb-2" src="img/damggi/logo_dotori.svg" alt="damkki" width="40">
           </a>
           <a class="navbar-brand d-lg-none flex-shrink-0 order-lg-1 ms-lg-0 pe-lg-2 me-lg-4 ms-4 me-2">
-            <img style="margin-bottom: 6px;" src="img/damggi/introduce/navbar_text.svg" alt="damkki" width="75">
+            <img style="margin-bottom: 6px;" src="img/damggi/introduce/navbar_text.svg" alt="damkki" width="85">
           </a>
           <div class="d-flex align-items-center order-lg-3 ms-lg-auto">
             <a class="btn btn-outline-secondary d-none d-lg-block text-decoration-none" style="width: 174px; height: 36px; font-size: 14px; padding: 6px 0px 0px 2px;" href="contact.html" rel="noopener">문의하기 </a>
@@ -219,14 +219,14 @@
               <!-- Menu-->
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link active" href="introduce.html">담끼 소개</a></li>
-                <li class="nav-item dropdown">
+                <li class="nav-item"><a class="nav-link" href="service.html">이용방법</a></li>
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link show" id="navbarServiceRow" href="service.html" onclick="changeArrow()"
                   data-bs-toggle="dropdown" aria-expanded="true">서비스<i class="ai-chevron-up d-lg-none ms-1 mb-1" id="arrow"></i></a>
                   <ul class="dropdown-menu show" data-bs-popper="none">
-                    <!-- <a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a> -->
-                    <!--<div class="dropdown-column">--><li><a class="dropdown-item ms-3 ms-lg-0 mt-2 mb-2 my-lg-0" href="service.html">시스템 소개</a></li><li><a class="dropdown-item ms-3 ms-lg-0" href="service.html#howToUse">이용방법</a></li>
+                    <li><a class="dropdown-item ms-3 ms-lg-0 mt-2 mb-2 my-lg-0" href="service.html">시스템 소개</a></li><li><a class="dropdown-item ms-3 ms-lg-0" href="service.html#howToUse">이용 방법</a></li>
                   </ul>
-                </li>
+                </li> -->
                 <li class="nav-item"><a class="nav-link" href="service_area.html">반납장소·음식점 찾기</a></li>
                 <li class="nav-item"><a class="nav-link" href="hygienic_safety.html">위생·안전</a></li>
                 <!-- <li class="nav-item"><a class="nav-link" href="environment.html">환경 효과</a></li> -->
@@ -337,17 +337,21 @@
       <!-- Page content-->
 
       <section class="row bg-primary text-center py-6 mx-0 selection-light">
-        <img class="d-md-none mx-auto" style="width: 198px;" src="img/damggi/introduce/slogan_small.svg" alt="">
-        <img class="d-none d-md-block mx-auto" style="width: 478px;" src="img/damggi/introduce/slogan_large.svg" alt="">
+        <div class="flex-column">
+          <img class="d-block d-md-none mx-auto mb-4" style="width: 80px;" src="img/damggi/introduce/text_slogan.svg" alt="slogan">
+          <img class="d-block d-md-none mx-auto" style="width: 140px;" src="img/damggi/introduce/text_slogan_korean.svg" alt="slogan_korean">
+          <img class="d-none d-md-block mx-auto mb-4" style="width: 100px;" src="img/damggi/introduce/text_slogan.svg" alt="slogan">
+          <img class="d-none d-md-block mx-auto" style="width: 260px;" src="img/damggi/introduce/text_slogan_korean.svg" alt="slogan_korean">
+        </div>
         <div class="row mx-0">
           <div class="col-lg-4 offset-lg-2">
             <img class="d-lg-none mt-6 mb-4 mx-auto" src="img/damggi/introduce/stainless1_food_small.png" alt="">
             <img class="d-none d-lg-block mt-6 mb-4 mx-auto" src="img/damggi/introduce/stainless1_food_large.png" alt="">
             <p class="text-white fs-md-xl">스테인리스 밀폐용기에 음식을 배달해 <br/> 쓰레기 없이 <span class="fw-bold text-yellow">깨끗한</span> 배달문화를 만듭니다.</p>
-            <div class="mt-n1">
+            <!-- <div class="mt-n1">
               <a class="fancy-link fs-md-base" href="service.html">서비스 보러가기</a>
               <i class="ai-chevron-right text-white" style="font-size: 20px;"></i>
-            </div>
+            </div> -->
           </div>
           <div class="col-lg-4">
             <img class="d-lg-none mt-6 mb-4 mx-auto" src="img/damggi/introduce/wash_system_small.png" alt="">
@@ -359,11 +363,75 @@
             </div>
           </div>
         </div>
-
       </section>
 
+
+      <section class="text-center bg-primary pb-lg-5">
+        <img class="mt-6" src="img/damggi/introduce/text_system.svg" width="110" alt="system">
+        <p class="fs-xl fs-md-2xl fw-medium text-white pt-4 pb-4">모두를 위한 서비스</p>
+        <div class="d-flex justify-content-around justify-content-md-center">
+          <div class="text-center mx-md-3">
+            <img class="d-md-none mb-3" src="img/damggi/service/character_client_small.svg" alt="">
+            <img class="d-none d-md-block mb-3" src="img/damggi/service/character_client_large.svg" alt="">
+            <p class="fs-sm fs-md-base text-white mb-0">맛있는 음식을 <br/> 깨끗하게 먹고픈</p>
+            <p class="fs-sm fs-md-xl fw-bold text-white" style="margin-top: 2px;">누구나</p>
+          </div>
+          <div class="text-center mx-md-3">
+            <img class="d-md-none mb-3" src="img/damggi/service/character_restaurant_small.svg" alt="">
+            <img class="d-none d-md-block mb-3" src="img/damggi/service/character_restaurant_large.svg" alt="">
+            <p class="fs-sm fs-md-base text-white mb-0">항상 고객을 <br/> 먼저 생각하는</p>
+            <p class="fs-sm fs-md-xl fw-bold text-white" style="margin-top: 2px;">음식점</p>
+          </div>
+          <div class="text-center mx-md-3">
+            <img class="d-md-none mb-3" src="img/damggi/service/character_driver_small.svg" alt="">
+            <img class="d-none d-md-block mb-3" src="img/damggi/service/character_driver_large.svg" alt="">
+            <p class="fs-sm fs-md-base text-white mb-0">일회용 쓰레기 <br/> 없이 깨끗한</p>
+            <p class="fs-sm fs-md-xl fw-bold text-white" style="margin-top: 2px;">배달문화</p>
+          </div>
+        </div>
+        <p class="text-white fs-md-xl mt-4 mb-0 pb-6">담끼는 <span class="fw-bold text-yellow">모두를</span> 생각했습니다.</p>
+      </section>
+
+      <section class="text-center pt-6 pb-4">
+        <p class="fs-xl fs-md-2xl fw-medium mb-2 mb-md-5">그래서,<span class="fw-bold">반납함!</span> <br/> 함께 만드는 지속가능한 배달</p>
+        <div class="container mt-5 mt-md-6">
+          <div class="row justify-content-md-center">
+            <img class="w-100 w-md-70" src="img/damggi/introduce/service_system_large.svg" alt="">
+            <div class="d-flex flex-lg-column justify-content-around mt-4 px-3 py-md-6">
+              <div class="text-center mb-md-5">
+                <img class="" src="img/damggi/service/dotori_1.svg" alt="">
+                <p class="fs-sm fs-md-xl mt-2" style="margin-bottom: 2px;">반납된 식기를 <br class="d-lg-none"/>효율적으로 수거하니까</p>
+                <p class="fs-md-xl fw-bold">비용은 내려가고!</p>
+              </div>
+              <div class="text-center">
+                <img class="" src="img/damggi/service/dotori_2.svg" alt="">
+                <p class="fs-sm fs-md-xl mt-2" style="margin-bottom: 2px;">매일매일 수거하고 <br class="d-lg-none"/>깨끗하게 관리하니까</p>
+                <p class="fs-md-xl fw-bold">분실·오염 걱정 없이!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-grey mt-5">
+          <img class="mb-1" src="img/damggi/service/bg_white.svg" alt="">
+          <p class="fs-md-xl fw-md-medium mt-6 mb-5">그 결과,</p>
+          <p class="fs-md-xl mb-2"><i class="ai-home fw-bold pb-1 pe-1"></i>음식점은 <span class="fw-bold">저렴한 가격</span>으로 <span class="fw-bold">다회용기를</span> 사용하고,</p>
+          <p class="fs-md-xl"><i class="ai-users fw-bold pb-1 pe-1"></i>배달 고객은 <span class="fw-bold">무료</span>로 <span class="fw-bold">서비스를</span> 이용합니다.</p>
+          <img class="mt-5" src="img/damggi/service/bg_white_upside.svg" alt="">
+        </div>
+        <p class="fs-md-xl mt-6 mb-4">반납함으로 향하는 <span class="fw-bold">당신의 한 걸음이</span><br/> 더 많은 사람들에게 <span class="fw-bold">깨끗한 배달</span>을 제공하고<br/> 더 많은 일회용품 쓰레기를 줄입니다.</p>
+      </section>
+
+      <!-- <div class="text-center mb-5">
+        <a class="d-md-none btn btn-primary fw-bold text-center" data-aos="zoom-in-up" data-aos-duration="1000" style="width: 40%; height: 48px;" href="service.html">이용방법 알아보기</a>
+        <a class="d-none d-md-block btn btn-primary fw-bold" data-aos="zoom-in-up" data-aos-duration="1000" style="width: 30%; height: 48px;" href="service.html">이용방법 알아보기</a>  
+      </div> -->
+      <div class="mt-n1 text-center mb-6">
+        <a class="fancy-link-green fs-sm" href="service.html">이용방법 알아보기</a>
+        <i class="ai-chevron-right" style="color: #45806A; font-size: 18px;"></i>
+      </div>
+
       <!-- Demos -->
-      <section>
+      <!-- <section>
         <div style="background-color: rgba(0, 0, 0, 0.03);" id="demos">
           <div class="container pt-6 pb-5 pt-md-7 pb-md-6">
             <div class="row text-center">
@@ -394,17 +462,11 @@
                 <a class="fancy-link-green fs-md-base" href="service.html#howToUse">이용방법 보러가기</a>
                 <i class="ai-chevron-right" style="color: #45806A; font-size: 20px;"></i>
               </div>
-              <!-- <a class="text-decoration-none" href="demo-business-consulting.html#scroll">서비스 보러가기</a> -->
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- <section>
-        <div id="map" style="width:500px; height:400px;">
-
-        </div>
       </section> -->
+
 
       <!-- Components-->
       <!-- <section class="bg-gradient py-5 py-md-6 py-lg-7">
@@ -738,7 +800,7 @@
         </div>
       </section> -->
     </main>
-    <footer>
+    <footer class="bg-grey">
       <div class="footer container mt-3 mt-md-2">
         <div class="col-xl-6 col-lg-5 col-md-4 mb-3 mb-md-2 w-100 text-center text-md-start">
           <div class="pt-2">
@@ -756,13 +818,13 @@
               <!-- <li class="list-inline-item my-1"><a class="nav-link-style" href="#">Terms &amp; Conditions</a></li> -->
             </ul>
             <div class="d-none d-lg-block fs-xs">
-              <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">주식회사 그리노늘 | 사업자등록번호: 525-88-02242 | 주소: 경기도 성남시 중원구 도촌로7번길 4-7, B01(도촌동) | 전화번호: 070-4150-2233 | 이메일: greenoneul@gmail.com</span></p>
+              <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">그리노늘 주식회사 | 사업자등록번호: 525-88-02242 | 주소: 경기도 성남시 중원구 도촌로7번길 4-7, B01(도촌동) | 전화번호: 070-4150-2233 | 이메일: greenoneul@gmail.com</span></p>
               <!-- <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">주소: 경기도 분당구 ㅇㅇ로 00길 0</span></p> -->
               <!-- <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted me-1">전화번호: 02-000-000 | 이메일: example@email.com</span></p> -->
               <p class="fs-xs mb-0 order-md-1"><span class="text-muted me-1">© copyright 2021 담끼 All rights reserved.</span>
             </div>
             <div class="d-lg-none">
-              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">주식회사 그리노늘 | 사업자등록번호: 525-88-02242</span></p>
+              <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">그리노늘 주식회사 | 사업자등록번호: 525-88-02242</span></p>
               <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">주소: 경기도 성남시 중원구 도촌로7번길 4-7, B01(도촌동)</span></p>
               <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">전화번호: 070-4150-2233 | 이메일: greenoneul@gmail.com</span></p>
               <p class="fs-sm mb-0 me-3 order-md-1"><span class="text-muted fs-xs me-1">© copyright 2021 그리노늘 All rights reserved.</span>

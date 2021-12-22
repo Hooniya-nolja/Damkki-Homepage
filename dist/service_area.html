@@ -342,14 +342,16 @@
       <section class="bg-primary py-md-6">
         <div class="container">
           <div class="row">
+            <!-- PC -->
             <div class="d-none d-md-block col-md-4 text-center text-md-start pt-5 pt-md-0 pb-4">
               <p class="text-white fs-3 fs-md-2xl fw-medium mb-4">반납장소</p>
               <p class="text-white fs-md-xl mb-2">'압구정볶는커피' 분당효자점 카페 입구</p>
               <p class="fs-sm fs-md-base text-grey mt-1 mb-0">현재 분당구 서현동 대상으로 서비스를 진행하고 있습니다</p>
             </div>
+            <!-- MOBILE -->
             <div class="d-md-none col-md-4 text-center text-md-start pt-5 pt-md-0 pb-4">
               <img class="d-block mx-auto mb-2" src="img/damggi/service_area/icon_mapMarker.svg" alt="marker">
-              <img class="d-block mx-auto mb-4" src="img/damggi/service_area/text_returnSpot.svg" alt="returnSpot">
+              <img class="d-block mx-auto mb-4 pt-1" src="img/damggi/service_area/text_returnSpot.svg" alt="returnSpot">
               <p class="fs-xl fw-semibold text-yellow mb-0">'압구정볶는커피' 분당효자점 카페 입구</p>
             </div>
             <div class="d-flex flex-row-reverse col-md-8 px-0 pe-md-3">
@@ -364,7 +366,46 @@
         <div id="scrollPointForRestaurant"></div>
       </section>
 
-      <section class="container text-center py-6 px-0 px-md-0 my-lg-6">
+      <section class="d-md-none text-center" id="restaurantListContainer">
+        <div class="container d-flex flex-column bg-secondary pt-5 pb-6 px-0 px-md-0 my-lg-6">
+          <img class="mx-auto mb-2" src="img/damggi/service_area/icon_search.svg" alt="search">
+          <img class="mx-auto mb-4" src="img/damggi/service_area/text_searchRestaurant.svg" alt="searchRestaurant">
+          <img class="mx-auto mb-5" src="img/damggi/service_area/separate_line.svg" width="92%" alt="separateLine">
+          <img class="mx-auto mt-1 mb-2" src="img/damggi/service_area/text_restaurant1.svg" alt="restaurant1">
+          <div class="tns-carousel-wrapper tns-controls-inside px-0">
+            <div class="tns-carousel-inner py-4" data-carousel-options='{"controls": false, "items": 1,"autoplay": false, "loop": false, "responsive": {"767": {"items": 3}}}'>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food1_restaurant1.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">치즈 미트볼 토마토 파스타</p>
+                  <p class="card-text fs-4vw mb-2">손수 만든 수제 미트볼 안에 치즈가 가득!</p>
+                </div>
+              </div>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food2_restaurant1.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">브로콜리 까르보나라</p>
+                  <p class="card-text fs-4vw mb-2">매장에서 직접 만든 특제크림소스!</p>
+                </div>
+              </div>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food3_restaurant1.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">해산물 크림 리조또</p>
+                  <p class="card-text fs-4vw mb-2">당일 잡은 해산물을 공수해서 투입!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="fw-medium text-green mt-2">파스타를 다회용기에 담고 싶다면</p>
+          <a class="d-md-none btn btn-deepgreen d-flex justify-content-center fw-bold text-center mx-auto" style="width: 92%; height: 60px;" href="https://baemin.me/Cx7b6PvBTl">
+            <img class="w-50" src="img/damggi/service_area/test_order1.svg" alt="order">
+          </a>
+        </div>
+      </section>
+
+
+      <section class="d-none d-md-block container text-center py-6 px-0 px-md-0 my-lg-6">
         <p class="fs-xl fs-md-2xl fw-medium mb-3">가맹음식점 안내</p>
         <p class="mb-5" style="color: rgb(131, 131, 131);">클릭 시 배달어플 페이지로 이동합니다</p>
 
@@ -670,43 +711,6 @@
 
         }
       </script> -->
-
-
-<!-- <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a href="#" class="page-link" aria-label="Previous">
-        <i class="ai-chevron-left"></i>
-      </a>
-    </li>
-    <li class="page-item d-sm-none">
-      <span class="page-link page-link-static">2 / 5</span>
-    </li>
-    <li class="page-item d-none d-sm-block">
-      <a href="#" class="page-link">1</a>
-    </li>
-    <li class="page-item active d-none d-sm-block" aria-current="page">
-      <span class="page-link">
-        2
-        <span class="visually-hidden">(current)</span>
-      </span>
-    </li>
-    <li class="page-item d-none d-sm-block">
-      <a href="#" class="page-link">3</a>
-    </li>
-    <li class="page-item d-none d-sm-block">
-      <a href="#" class="page-link">4</a>
-    </li>
-    <li class="page-item d-none d-sm-block">
-      <a href="#" class="page-link">5</a>
-    </li>
-    <li class="page-item">
-      <a href="#" class="page-link" aria-label="Next">
-        <i class="ai-chevron-right"></i>
-      </a>
-    </li>
-  </ul>
-</nav> -->
 
 
       <section class="text-center py-6 py-md-7 bg-primary">

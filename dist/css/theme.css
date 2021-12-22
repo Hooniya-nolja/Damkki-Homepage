@@ -4393,6 +4393,26 @@ fieldset:disabled .btn {
   border-color: rgba(61, 113, 92, 0.38);
 } */
 
+.btn-yellow {
+  color: rgb(255, 255, 255);
+  background-color: #FFCD00;
+  border-color: #FFCD00;
+  box-shadow: unset;
+}
+
+.btn-yellow:hover {
+  color: rgb(255, 255, 255);
+  background-color: #ffd942;
+  border-color: #ffd942;
+}
+
+.btn-check:focus + .btn-yellow, .btn-yellow:focus {
+  color: rgb(255, 255, 255);
+  background-color: #ffd942;
+  border-color: #ffd942;
+  box-shadow: unset, 0 0 0 0 rgba(100, 93, 207, 0.5);
+}
+
 .btn-success {
   color: #000;
   background-color: #16c995;

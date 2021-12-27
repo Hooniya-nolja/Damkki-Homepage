@@ -345,13 +345,21 @@
       <section class="bg-primary py-md-6">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 text-center text-md-start pt-5 pt-md-0 pb-4">
+            <!-- PC -->
+            <div class="d-none d-md-block col-md-4 text-center text-md-start pt-5 pt-md-0 pb-4">
               <p class="text-white fs-3 fs-md-2xl fw-medium mb-4">반납장소</p>
               <p class="text-white fs-md-xl mb-2">'압구정볶는커피' 분당효자점 카페 입구</p>
               <p class="fs-sm fs-md-base text-grey mt-1 mb-0">현재 분당구 서현동 대상으로 서비스를 진행하고 있습니다</p>
             </div>
+            <!-- MOBILE -->
+            <div class="d-md-none col-md-4 text-center text-md-start pt-5 pt-md-0 pb-4">
+              <img class="d-block mx-auto mb-2" src="img/damggi/service_area/icon_mapMarker.svg" alt="marker">
+              <img class="d-block mx-auto mb-4 pt-1" src="img/damggi/service_area/text_returnSpot.svg" alt="returnSpot">
+              <p class="fs-xl fw-semibold text-yellow mb-0">'압구정볶는커피' 분당효자점 카페 입구</p>
+            </div>
             <div class="d-flex flex-row-reverse col-md-8 px-0 pe-md-3">
-              <img src="img/damggi/service_area/map_returnbox.svg" class="w-md-82 mx-auto mx-lg-0 mb-5 mb-md-0" style="width: 90%;"></div>
+              <img src="img/damggi/service_area/map_returnbox.svg" class="w-md-82 mx-auto mx-lg-0 mb-2 mb-md-0" style="width: 90%;"></div>
+              <p class="d-md-none fs-sm fs-md-base text-grey mt-1 mb-6 text-center">현재 분당구 서현동 대상으로 서비스를 진행하고 있습니다</p>
             </div>
             <!-- <div class="d-flex flex-row-reverse col-md-8 px-0 pe-md-3">
               <div id="kakaomap" class="w-md-82 w-100" style="height: 45vh;"></div>
@@ -361,7 +369,78 @@
         <div id="scrollPointForRestaurant"></div>
       </section>
 
-      <section class="container text-center py-6 px-0 px-md-0 my-lg-6">
+      <section class="d-md-none text-center" id="restaurantListContainer">
+        <div class="container d-flex flex-column bg-secondary pt-5 pb-5 px-0 px-md-0 my-lg-6">
+          <img class="mx-auto mb-2" src="img/damggi/service_area/icon_search.svg" alt="search">
+          <img class="mx-auto mb-4" src="img/damggi/service_area/text_searchRestaurant.svg" alt="searchRestaurant">
+          <img class="mx-auto mb-5" src="img/damggi/service_area/separate_line.svg" width="92%" alt="separateLine">
+          <img class="mx-auto mt-1 mb-2" src="img/damggi/service_area/text_restaurant1.svg" alt="restaurant1">
+          <div class="tns-carousel-wrapper tns-controls-inside px-0">
+            <div class="tns-carousel-inner py-4" data-carousel-options='{"controls": false, "items": 1,"autoplay": false, "loop": false, "responsive": {"767": {"items": 3}}}'>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food1_restaurant1.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">치즈 미트볼 토마토 파스타</p>
+                  <p class="card-text fs-4vw mb-2">손수 만든 수제 미트볼 안에 치즈가 가득!</p>
+                </div>
+              </div>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food2_restaurant1.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">브로콜리 까르보나라</p>
+                  <p class="card-text fs-4vw mb-2">매장에서 직접 만든 특제크림소스!</p>
+                </div>
+              </div>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food3_restaurant1.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">해산물 크림 리조또</p>
+                  <p class="card-text fs-4vw mb-2">당일 잡은 해산물을 공수해서 투입!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="fw-medium text-green mt-2">파스타를 다회용기에 담고 싶다면</p>
+          <a class="d-md-none btn btn-deepgreen d-flex justify-content-center fw-bold text-center mx-auto" style="width: 92%; height: 60px;" href="https://baemin.me/Cx7b6PvBTl">
+            <img class="w-50" src="img/damggi/service_area/test_order1.svg" alt="order">
+          </a>
+        </div>
+        <div class="container d-flex flex-column bg-primary pt-5 pb-6 px-0 px-md-0 my-lg-6">
+          <img class="mx-auto mt-3 mb-2" src="img/damggi/service_area/text_restaurant2.svg" alt="restaurant1">
+          <div class="tns-carousel-wrapper tns-controls-inside px-0">
+            <div class="tns-carousel-inner py-4" data-carousel-options='{"controls": false, "items": 1,"autoplay": false, "loop": false, "responsive": {"767": {"items": 3}}}'>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food1_restaurant2.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">묵은지 고등어 시래기</p>
+                  <p class="card-text fs-4vw mb-2">불변의 꽃시래 1등 밥도둑! 엄마가 해주는 그 맛!</p>
+                </div>
+              </div>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food2_restaurant2.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">수제 시래기 떡갈비</p>
+                  <p class="card-text fs-4vw mb-2">떡과 시래기를 넣고 직접 치대서 성형!</p>
+                </div>
+              </div>
+              <div class="card shadow-strong pe-0 mx-3 border-0" style="height: 100%;">
+                <img src="img/damggi/service_area/food3_restaurant2.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body px-3 py-4">
+                  <p class="card-text fs-5vw fw-bold mb-2">겉바속촉 메밀전병</p>
+                  <p class="card-text fs-4vw mb-2">메밀전병 때문에 주문하시는 분들도 계실 정도!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="fw-medium text-white mt-2">한식을 다회용기에 담고 싶다면</p>
+          <a class="d-md-none btn btn-yellow d-flex justify-content-center fw-bold text-center mx-auto" style="width: 92%; height: 60px;" href="https://baemin.me/_qZhvnifEr">
+            <img class="w-50" src="img/damggi/service_area/test_order2.svg" alt="order">
+          </a>
+        </div>
+        <img class="mx-auto my-3" src="img/damggi/service_area/separate_line.svg" width="92%" alt="separateLine">
+      </section>
+
+      <section class="d-none d-md-block container text-center py-6 px-0 px-md-0 my-lg-6">
         <p class="fs-xl fs-md-2xl fw-medium mb-3">가맹음식점 안내</p>
         <p class="mb-5" style="color: rgb(131, 131, 131);">클릭 시 배달어플 페이지로 이동합니다</p>
 
@@ -388,17 +467,17 @@
           </div>
 
           <div class="col-sm-12 col-md-4">
-            <div class="card shadow-lg mx-3 my-3">
+            <div class="card shadow-lg mx-3 my-3" style="cursor: pointer;" onclick="location.href='https://baemin.me/_qZhvnifEr';">
             <img src="img/damggi/substitute_image.png" class="card-img-top" alt="Card image">
             <div class="card-body text-start pt-3">
               <div class="d-flex justify-content-between">
-                <span class="card-title fw-medium">닭발에 꼬치닭 분당점</span>
+                <span class="card-title fw-medium">고미꽃시래</span>
                 <div>
                   <img class="pb-1" src="img/damggi/service_area/tag_baemin.svg" alt="">
                   <img class="pb-1" src="img/damggi/service_area/tag_yogiyo.svg" alt="">
                 </div>
               </div>
-              <p class="card-text fs-sm">닭꼬치, 닭발, 맛있어 세트, 메뉴 이름, 메뉴 이름</p>
+              <p class="card-text fs-sm">김치찌개, 고등어조림, 수제떡갈비</p>
             </div>
             </div>
           </div>
